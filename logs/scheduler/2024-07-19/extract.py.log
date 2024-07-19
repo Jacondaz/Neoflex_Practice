@@ -955,3 +955,59 @@ NameError: name 'PostgresHook' is not defined. Did you mean: 'postgres_uri'?
 [2024-07-19T21:22:59.104+0000] {logging_mixin.py:188} INFO - [2024-07-19T21:22:59.104+0000] {dag.py:3096} INFO - Sync 1 DAGs
 [2024-07-19T21:22:59.121+0000] {logging_mixin.py:188} INFO - [2024-07-19T21:22:59.121+0000] {dag.py:3954} INFO - Setting next_dagrun for extract to 2024-07-19 00:00:00+00:00, run_after=2024-07-20 00:00:00+00:00
 [2024-07-19T21:22:59.140+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extract.py took 0.144 seconds
+[2024-07-19T21:23:29.270+0000] {processor.py:161} INFO - Started process (PID=9781) to work on /opt/airflow/dags/extract.py
+[2024-07-19T21:23:29.272+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extract.py for tasks to queue
+[2024-07-19T21:23:29.275+0000] {logging_mixin.py:188} INFO - [2024-07-19T21:23:29.274+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extract.py
+[2024-07-19T21:23:29.362+0000] {processor.py:840} INFO - DAG(s) 'extract' retrieved from /opt/airflow/dags/extract.py
+[2024-07-19T21:23:29.387+0000] {logging_mixin.py:188} INFO - [2024-07-19T21:23:29.386+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-19T21:23:29.408+0000] {logging_mixin.py:188} INFO - [2024-07-19T21:23:29.407+0000] {dag.py:3954} INFO - Setting next_dagrun for extract to 2024-07-19 00:00:00+00:00, run_after=2024-07-20 00:00:00+00:00
+[2024-07-19T21:23:29.432+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extract.py took 0.167 seconds
+[2024-07-19T21:24:00.189+0000] {processor.py:161} INFO - Started process (PID=9818) to work on /opt/airflow/dags/extract.py
+[2024-07-19T21:24:00.190+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extract.py for tasks to queue
+[2024-07-19T21:24:00.192+0000] {logging_mixin.py:188} INFO - [2024-07-19T21:24:00.192+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extract.py
+[2024-07-19T21:24:00.277+0000] {processor.py:840} INFO - DAG(s) 'extract' retrieved from /opt/airflow/dags/extract.py
+[2024-07-19T21:24:00.302+0000] {logging_mixin.py:188} INFO - [2024-07-19T21:24:00.302+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-19T21:24:00.322+0000] {logging_mixin.py:188} INFO - [2024-07-19T21:24:00.322+0000] {dag.py:3954} INFO - Setting next_dagrun for extract to 2024-07-19 00:00:00+00:00, run_after=2024-07-20 00:00:00+00:00
+[2024-07-19T21:24:00.338+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extract.py took 0.154 seconds
+[2024-07-19T21:24:31.085+0000] {processor.py:161} INFO - Started process (PID=9849) to work on /opt/airflow/dags/extract.py
+[2024-07-19T21:24:31.086+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extract.py for tasks to queue
+[2024-07-19T21:24:31.088+0000] {logging_mixin.py:188} INFO - [2024-07-19T21:24:31.087+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extract.py
+[2024-07-19T21:24:31.180+0000] {processor.py:840} INFO - DAG(s) 'extract' retrieved from /opt/airflow/dags/extract.py
+[2024-07-19T21:24:31.217+0000] {logging_mixin.py:188} INFO - [2024-07-19T21:24:31.217+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-19T21:24:31.394+0000] {logging_mixin.py:188} INFO - [2024-07-19T21:24:31.393+0000] {dag.py:3954} INFO - Setting next_dagrun for extract to 2024-07-19 00:00:00+00:00, run_after=2024-07-20 00:00:00+00:00
+[2024-07-19T21:24:31.426+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extract.py took 0.348 seconds
+[2024-07-19T21:25:01.531+0000] {processor.py:161} INFO - Started process (PID=9880) to work on /opt/airflow/dags/extract.py
+[2024-07-19T21:25:01.532+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extract.py for tasks to queue
+[2024-07-19T21:25:01.534+0000] {logging_mixin.py:188} INFO - [2024-07-19T21:25:01.534+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extract.py
+[2024-07-19T21:25:01.612+0000] {processor.py:840} INFO - DAG(s) 'extract' retrieved from /opt/airflow/dags/extract.py
+[2024-07-19T21:25:01.635+0000] {logging_mixin.py:188} INFO - [2024-07-19T21:25:01.635+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-19T21:25:01.653+0000] {logging_mixin.py:188} INFO - [2024-07-19T21:25:01.653+0000] {dag.py:3954} INFO - Setting next_dagrun for extract to 2024-07-19 00:00:00+00:00, run_after=2024-07-20 00:00:00+00:00
+[2024-07-19T21:25:01.673+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extract.py took 0.147 seconds
+[2024-07-19T21:25:31.788+0000] {processor.py:161} INFO - Started process (PID=9911) to work on /opt/airflow/dags/extract.py
+[2024-07-19T21:25:31.789+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extract.py for tasks to queue
+[2024-07-19T21:25:31.791+0000] {logging_mixin.py:188} INFO - [2024-07-19T21:25:31.791+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extract.py
+[2024-07-19T21:25:31.866+0000] {processor.py:840} INFO - DAG(s) 'extract' retrieved from /opt/airflow/dags/extract.py
+[2024-07-19T21:25:31.891+0000] {logging_mixin.py:188} INFO - [2024-07-19T21:25:31.891+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-19T21:25:32.004+0000] {logging_mixin.py:188} INFO - [2024-07-19T21:25:32.004+0000] {dag.py:3954} INFO - Setting next_dagrun for extract to 2024-07-19 00:00:00+00:00, run_after=2024-07-20 00:00:00+00:00
+[2024-07-19T21:25:32.025+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extract.py took 0.245 seconds
+[2024-07-19T21:26:02.156+0000] {processor.py:161} INFO - Started process (PID=9942) to work on /opt/airflow/dags/extract.py
+[2024-07-19T21:26:02.157+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extract.py for tasks to queue
+[2024-07-19T21:26:02.160+0000] {logging_mixin.py:188} INFO - [2024-07-19T21:26:02.159+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extract.py
+[2024-07-19T21:26:02.268+0000] {processor.py:840} INFO - DAG(s) 'extract' retrieved from /opt/airflow/dags/extract.py
+[2024-07-19T21:26:02.307+0000] {logging_mixin.py:188} INFO - [2024-07-19T21:26:02.307+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-19T21:26:02.332+0000] {logging_mixin.py:188} INFO - [2024-07-19T21:26:02.331+0000] {dag.py:3954} INFO - Setting next_dagrun for extract to 2024-07-19 00:00:00+00:00, run_after=2024-07-20 00:00:00+00:00
+[2024-07-19T21:26:02.370+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extract.py took 0.221 seconds
+[2024-07-19T21:26:32.457+0000] {processor.py:161} INFO - Started process (PID=9973) to work on /opt/airflow/dags/extract.py
+[2024-07-19T21:26:32.457+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extract.py for tasks to queue
+[2024-07-19T21:26:32.459+0000] {logging_mixin.py:188} INFO - [2024-07-19T21:26:32.459+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extract.py
+[2024-07-19T21:26:32.531+0000] {processor.py:840} INFO - DAG(s) 'extract' retrieved from /opt/airflow/dags/extract.py
+[2024-07-19T21:26:32.556+0000] {logging_mixin.py:188} INFO - [2024-07-19T21:26:32.556+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-19T21:26:32.685+0000] {logging_mixin.py:188} INFO - [2024-07-19T21:26:32.684+0000] {dag.py:3954} INFO - Setting next_dagrun for extract to 2024-07-19 00:00:00+00:00, run_after=2024-07-20 00:00:00+00:00
+[2024-07-19T21:26:32.706+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extract.py took 0.254 seconds
+[2024-07-19T21:27:02.860+0000] {processor.py:161} INFO - Started process (PID=10004) to work on /opt/airflow/dags/extract.py
+[2024-07-19T21:27:02.861+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extract.py for tasks to queue
+[2024-07-19T21:27:02.863+0000] {logging_mixin.py:188} INFO - [2024-07-19T21:27:02.863+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extract.py
+[2024-07-19T21:27:02.935+0000] {processor.py:840} INFO - DAG(s) 'extract' retrieved from /opt/airflow/dags/extract.py
+[2024-07-19T21:27:02.958+0000] {logging_mixin.py:188} INFO - [2024-07-19T21:27:02.958+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-19T21:27:02.976+0000] {logging_mixin.py:188} INFO - [2024-07-19T21:27:02.975+0000] {dag.py:3954} INFO - Setting next_dagrun for extract to 2024-07-19 00:00:00+00:00, run_after=2024-07-20 00:00:00+00:00
+[2024-07-19T21:27:02.994+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extract.py took 0.141 seconds

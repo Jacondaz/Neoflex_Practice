@@ -6218,3 +6218,52 @@
 [2024-07-19T21:23:19.988+0000] {logging_mixin.py:188} INFO - [2024-07-19T21:23:19.987+0000] {dag.py:3096} INFO - Sync 1 DAGs
 [2024-07-19T21:23:20.008+0000] {logging_mixin.py:188} INFO - [2024-07-19T21:23:20.007+0000] {dag.py:3954} INFO - Setting next_dagrun for from_csv_to_pgsql to 2024-07-19 00:00:00+00:00, run_after=2024-07-20 00:00:00+00:00
 [2024-07-19T21:23:22.131+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/from_csv_to_pgsql.py took 2.260 seconds
+[2024-07-19T21:23:52.908+0000] {processor.py:161} INFO - Started process (PID=9807) to work on /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-19T21:23:52.909+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/from_csv_to_pgsql.py for tasks to queue
+[2024-07-19T21:23:52.911+0000] {logging_mixin.py:188} INFO - [2024-07-19T21:23:52.911+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-19T21:23:52.992+0000] {processor.py:840} INFO - DAG(s) 'from_csv_to_pgsql' retrieved from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-19T21:23:53.018+0000] {logging_mixin.py:188} INFO - [2024-07-19T21:23:53.018+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-19T21:23:53.038+0000] {logging_mixin.py:188} INFO - [2024-07-19T21:23:53.038+0000] {dag.py:3954} INFO - Setting next_dagrun for from_csv_to_pgsql to 2024-07-19 00:00:00+00:00, run_after=2024-07-20 00:00:00+00:00
+[2024-07-19T21:23:53.059+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/from_csv_to_pgsql.py took 0.156 seconds
+[2024-07-19T21:24:23.830+0000] {processor.py:161} INFO - Started process (PID=9838) to work on /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-19T21:24:23.832+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/from_csv_to_pgsql.py for tasks to queue
+[2024-07-19T21:24:23.834+0000] {logging_mixin.py:188} INFO - [2024-07-19T21:24:23.834+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-19T21:24:23.917+0000] {processor.py:840} INFO - DAG(s) 'from_csv_to_pgsql' retrieved from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-19T21:24:23.945+0000] {logging_mixin.py:188} INFO - [2024-07-19T21:24:23.945+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-19T21:24:24.074+0000] {logging_mixin.py:188} INFO - [2024-07-19T21:24:24.073+0000] {dag.py:3954} INFO - Setting next_dagrun for from_csv_to_pgsql to 2024-07-19 00:00:00+00:00, run_after=2024-07-20 00:00:00+00:00
+[2024-07-19T21:24:24.097+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/from_csv_to_pgsql.py took 0.272 seconds
+[2024-07-19T21:24:54.379+0000] {processor.py:161} INFO - Started process (PID=9869) to work on /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-19T21:24:54.380+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/from_csv_to_pgsql.py for tasks to queue
+[2024-07-19T21:24:54.382+0000] {logging_mixin.py:188} INFO - [2024-07-19T21:24:54.382+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-19T21:24:54.465+0000] {processor.py:840} INFO - DAG(s) 'from_csv_to_pgsql' retrieved from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-19T21:24:54.500+0000] {logging_mixin.py:188} INFO - [2024-07-19T21:24:54.500+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-19T21:24:54.529+0000] {logging_mixin.py:188} INFO - [2024-07-19T21:24:54.529+0000] {dag.py:3954} INFO - Setting next_dagrun for from_csv_to_pgsql to 2024-07-19 00:00:00+00:00, run_after=2024-07-20 00:00:00+00:00
+[2024-07-19T21:24:54.555+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/from_csv_to_pgsql.py took 0.180 seconds
+[2024-07-19T21:25:25.332+0000] {processor.py:161} INFO - Started process (PID=9900) to work on /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-19T21:25:25.333+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/from_csv_to_pgsql.py for tasks to queue
+[2024-07-19T21:25:25.336+0000] {logging_mixin.py:188} INFO - [2024-07-19T21:25:25.335+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-19T21:25:25.416+0000] {processor.py:840} INFO - DAG(s) 'from_csv_to_pgsql' retrieved from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-19T21:25:25.441+0000] {logging_mixin.py:188} INFO - [2024-07-19T21:25:25.440+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-19T21:25:25.571+0000] {logging_mixin.py:188} INFO - [2024-07-19T21:25:25.570+0000] {dag.py:3954} INFO - Setting next_dagrun for from_csv_to_pgsql to 2024-07-19 00:00:00+00:00, run_after=2024-07-20 00:00:00+00:00
+[2024-07-19T21:25:25.588+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/from_csv_to_pgsql.py took 0.261 seconds
+[2024-07-19T21:25:55.784+0000] {processor.py:161} INFO - Started process (PID=9931) to work on /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-19T21:25:55.785+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/from_csv_to_pgsql.py for tasks to queue
+[2024-07-19T21:25:55.787+0000] {logging_mixin.py:188} INFO - [2024-07-19T21:25:55.786+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-19T21:25:55.883+0000] {processor.py:840} INFO - DAG(s) 'from_csv_to_pgsql' retrieved from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-19T21:25:55.906+0000] {logging_mixin.py:188} INFO - [2024-07-19T21:25:55.906+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-19T21:25:55.923+0000] {logging_mixin.py:188} INFO - [2024-07-19T21:25:55.923+0000] {dag.py:3954} INFO - Setting next_dagrun for from_csv_to_pgsql to 2024-07-19 00:00:00+00:00, run_after=2024-07-20 00:00:00+00:00
+[2024-07-19T21:25:55.952+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/from_csv_to_pgsql.py took 0.174 seconds
+[2024-07-19T21:26:26.091+0000] {processor.py:161} INFO - Started process (PID=9962) to work on /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-19T21:26:26.092+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/from_csv_to_pgsql.py for tasks to queue
+[2024-07-19T21:26:26.094+0000] {logging_mixin.py:188} INFO - [2024-07-19T21:26:26.094+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-19T21:26:26.175+0000] {processor.py:840} INFO - DAG(s) 'from_csv_to_pgsql' retrieved from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-19T21:26:26.199+0000] {logging_mixin.py:188} INFO - [2024-07-19T21:26:26.199+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-19T21:26:26.315+0000] {logging_mixin.py:188} INFO - [2024-07-19T21:26:26.314+0000] {dag.py:3954} INFO - Setting next_dagrun for from_csv_to_pgsql to 2024-07-19 00:00:00+00:00, run_after=2024-07-20 00:00:00+00:00
+[2024-07-19T21:26:26.345+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/from_csv_to_pgsql.py took 0.258 seconds
+[2024-07-19T21:26:56.600+0000] {processor.py:161} INFO - Started process (PID=9993) to work on /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-19T21:26:56.601+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/from_csv_to_pgsql.py for tasks to queue
+[2024-07-19T21:26:56.602+0000] {logging_mixin.py:188} INFO - [2024-07-19T21:26:56.602+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-19T21:26:56.678+0000] {processor.py:840} INFO - DAG(s) 'from_csv_to_pgsql' retrieved from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-19T21:26:56.707+0000] {logging_mixin.py:188} INFO - [2024-07-19T21:26:56.707+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-19T21:26:56.724+0000] {logging_mixin.py:188} INFO - [2024-07-19T21:26:56.724+0000] {dag.py:3954} INFO - Setting next_dagrun for from_csv_to_pgsql to 2024-07-19 00:00:00+00:00, run_after=2024-07-20 00:00:00+00:00
+[2024-07-19T21:26:56.744+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/from_csv_to_pgsql.py took 0.150 seconds

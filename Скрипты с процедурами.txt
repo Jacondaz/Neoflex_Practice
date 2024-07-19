@@ -1,0 +1,99 @@
+1)fill_account_balance_f
+
+begin
+ 
+    delete from dm.dm_account_balance_f where on_date = i_OnDate;
+
+    insert into dm.dm_account_balance_f(on_date, account_rk, balance_out, balance_out_rub)
+    select
+        i_OnDate as on_date,
+        acc.account_rk,
+        case
+            when acc.char_type = 'А' then coalesce(prev.balance_out, 0) + coalesce(turn.debet_amount, 0) - coalesce(turn.credit_amount, 0)
+            when acc.char_type = 'П' then coalesce(prev.balance_out, 0) - coalesce(turn.debet_amount, 0) + coalesce(turn.credit_amount, 0)
+        end as balance_out,
+        case
+            when acc.char_type = 'А' then coalesce(prev.balance_out_rub, 0) + coalesce(turn.debet_amount_rub, 0) - coalesce(turn.credit_amount_rub, 0)
+            when acc.char_type = 'П' then coalesce(prev.balance_out_rub, 0) - coalesce(turn.debet_amount_rub, 0) + coalesce(turn.credit_amount_rub, 0)
+        end as balance_out_rub
+    from ds.md_account_d acc
+    left join dm.dm_account_balance_f prev on prev.on_date = i_OnDate - interval '1 day' and prev.account_rk = acc.account_rk
+    left join dm.dm_account_turnover_f turn on turn.on_date = i_OnDate and turn.account_rk = acc.account_rk
+    where i_OnDate between acc.data_actual_date and acc.data_actual_end_date;
+end;
+
+2)fill_account_turnover_f
+
+begin
+delete from dm.dm_account_turnover_f where on_date = i_OnDate;
+
+insert into dm.dm_account_turnover_f (on_date, account_rk, credit_amount, credit_amount_rub, debet_amount, debet_amount_rub)
+select 
+	i_OnDate as on_date,
+	account_rk,
+	sum(credit_amount) as credit_amount,
+	sum(credit_amount * coalesce(er.reduced_cource, 1)) as credit_amount_rub,
+	sum(debet_amount) as debet_amount,
+	sum(debet_amount * coalesce(er.reduced_cource, 1)) as debet_amount_rub
+	from(
+select 
+	credit_account_rk as account_rk,
+	credit_amount,
+	0 as debet_amount
+from ds.ft_posting_f
+where oper_date = i_OnDate
+UNION ALL
+select
+	debet_account_rk as account_rk,
+	0 as credit_amount,
+	debet_amount
+from ds.ft_posting_f
+where oper_date = i_OnDate
+	) as turnover
+left join ds.md_exchange_rate_d er
+on er.data_actual_date = i_OnDate
+group by account_rk;
+end;
+
+3)fill_f101_round_f
+
+declare
+	v_FromDate date;
+	v_ToDate date;
+begin
+	v_FromDate := DATE_TRUNC('month', i_OnDate - INTERVAL '1 month');
+    v_ToDate := (DATE_TRUNC('month', i_OnDate) - INTERVAL '1 day');
+
+	delete from dm.dm_f101_round_f
+	where to_date = v_ToDate;
+
+	insert into dm.dm_f101_round_f(from_date, to_date, chapter, ledger_account, characteristic, balance_in_rub, balance_in_val, balance_in_total, turn_deb_rub, turn_deb_val, turn_deb_total, turn_cre_rub, turn_cre_val, turn_cre_total, balance_out_rub, balance_out_val, balance_out_total)
+	select
+		v_FromDate,
+		v_ToDate,
+		acc_s.chapter,
+		left(acc.account_number, 5) as ledger_account,
+		acc.char_type as characteristic,
+		sum(case when acc.currency_code in ('810', '643') then bal.balance_out_rub else 0 end) as balance_in_rub,
+		SUM(CASE WHEN acc.currency_code NOT IN ('810', '643') THEN bal.balance_out_rub ELSE 0 END) AS balance_in_val,
+		SUM(bal.balance_out_rub) AS balance_in_total,
+		SUM(CASE WHEN acc.currency_code IN ('810', '643') THEN turn.debet_amount_rub ELSE 0 END) AS turn_deb_rub,
+        SUM(CASE WHEN acc.currency_code NOT IN ('810', '643') THEN turn.debet_amount_rub ELSE 0 END) AS turn_deb_val,
+        SUM(turn.debet_amount_rub) AS turn_deb_total,
+        SUM(CASE WHEN acc.currency_code IN ('810', '643') THEN turn.credit_amount_rub ELSE 0 END) AS turn_cre_rub,
+        SUM(CASE WHEN acc.currency_code NOT IN ('810', '643') THEN turn.credit_amount_rub ELSE 0 END) AS turn_cre_val,
+        SUM(turn.credit_amount_rub) AS turn_cre_total,
+        SUM(CASE WHEN acc.currency_code IN ('810', '643') THEN bal_last.balance_out_rub ELSE 0 END) AS balance_out_rub,
+        SUM(CASE WHEN acc.currency_code NOT IN ('810', '643') THEN bal_last.balance_out_rub ELSE 0 END) AS balance_out_val,
+        SUM(bal_last.balance_out_rub) AS balance_out_total
+		from
+			ds.md_account_d acc
+			join ds.md_ledger_account_s acc_s on acc_s.ledger_account::varchar = left(acc.account_number, 5) 
+			LEFT JOIN DM.DM_ACCOUNT_BALANCE_F bal ON acc.account_rk = bal.account_rk AND bal.on_date = v_FromDate - 1
+			LEFT JOIN DM.DM_ACCOUNT_TURNOVER_F turn ON acc.account_rk = turn.account_rk AND turn.on_date BETWEEN v_FromDate AND v_ToDate
+        	LEFT JOIN DM.DM_ACCOUNT_BALANCE_F bal_last ON acc.account_rk = bal_last.account_rk AND bal_last.on_date = v_ToDate
+		GROUP BY
+        acc_s.chapter,
+        left(acc.account_number, 5),
+        acc.char_type;
+end 
