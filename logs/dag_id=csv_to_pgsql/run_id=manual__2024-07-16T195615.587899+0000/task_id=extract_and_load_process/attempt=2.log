@@ -1,0 +1,45 @@
+[2024-07-16T20:01:33.877+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-16T20:01:33.900+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: csv_to_pgsql.extract_and_load_process manual__2024-07-16T19:56:15.587899+00:00 [queued]>
+[2024-07-16T20:01:33.908+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: csv_to_pgsql.extract_and_load_process manual__2024-07-16T19:56:15.587899+00:00 [queued]>
+[2024-07-16T20:01:33.909+0000] {taskinstance.py:2306} INFO - Starting attempt 2 of 2
+[2024-07-16T20:01:33.921+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): extract_and_load_process> on 2024-07-16 19:56:15.587899+00:00
+[2024-07-16T20:01:33.929+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=1399) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-07-16T20:01:33.927+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'csv_to_pgsql', 'extract_and_load_process', 'manual__2024-07-16T19:56:15.587899+00:00', '--job-id', '307', '--raw', '--subdir', 'DAGS_FOLDER/from_csv_to_pgsql.py', '--cfg-path', '/tmp/tmpnw67ydhx']
+[2024-07-16T20:01:33.930+0000] {standard_task_runner.py:63} INFO - Started process 1400 to run task
+[2024-07-16T20:01:33.930+0000] {standard_task_runner.py:91} INFO - Job 307: Subtask extract_and_load_process
+[2024-07-16T20:01:33.966+0000] {task_command.py:426} INFO - Running <TaskInstance: csv_to_pgsql.extract_and_load_process manual__2024-07-16T19:56:15.587899+00:00 [running]> on host 347bc1cf7978
+[2024-07-16T20:01:34.039+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='csv_to_pgsql' AIRFLOW_CTX_TASK_ID='extract_and_load_process' AIRFLOW_CTX_EXECUTION_DATE='2024-07-16T19:56:15.587899+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-07-16T19:56:15.587899+00:00'
+[2024-07-16T20:01:34.040+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-16T20:01:41.077+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-16T20:01:41.079+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/from_csv_to_pgsql.py", line 26, in extract_and_load_task
+    df.write.jdbc(url=postgres_uri, table=f'ds.{file_name}', mode="append", properties=properties)
+  File "/home/airflow/.local/lib/python3.12/site-packages/pyspark/sql/readwriter.py", line 1984, in jdbc
+    self.mode(mode)._jwrite.jdbc(url, table, jprop)
+  File "/home/airflow/.local/lib/python3.12/site-packages/py4j/java_gateway.py", line 1322, in __call__
+    return_value = get_return_value(
+                   ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pyspark/errors/exceptions/captured.py", line 185, in deco
+    raise converted from None
+pyspark.errors.exceptions.captured.AnalysisException: Column _c0 not found in schema Some(StructType(StructField(on_date,DateType,false),StructField(account_rk,IntegerType,false),StructField(currency_rk,IntegerType,true),StructField(balance_out,DoubleType,true))).
+[2024-07-16T20:01:41.102+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=csv_to_pgsql, task_id=extract_and_load_process, run_id=manual__2024-07-16T19:56:15.587899+00:00, execution_date=20240716T195615, start_date=20240716T200133, end_date=20240716T200141
+[2024-07-16T20:01:41.115+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 307 for task extract_and_load_process (Column _c0 not found in schema Some(StructType(StructField(on_date,DateType,false),StructField(account_rk,IntegerType,false),StructField(currency_rk,IntegerType,true),StructField(balance_out,DoubleType,true))).; 1400)
+[2024-07-16T20:01:41.136+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2024-07-16T20:01:41.156+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-16T20:01:41.161+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

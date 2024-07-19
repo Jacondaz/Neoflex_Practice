@@ -1,0 +1,1 @@
+[2024-07-19T20:14:20.551+0000] {scheduler_job_runner.py:769} ERROR - Executor reports task instance <TaskInstance: extract_and_load_1.save_to_pg scheduled__2024-07-17T00:00:00+00:00 [queued]> finished (failed) although the task says it's queued. (Info: None) Was the task killed externally?

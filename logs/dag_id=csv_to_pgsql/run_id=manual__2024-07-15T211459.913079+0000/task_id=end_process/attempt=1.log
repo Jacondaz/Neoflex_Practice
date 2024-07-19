@@ -1,0 +1,19 @@
+[2024-07-15T21:15:25.846+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-15T21:15:25.890+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: csv_to_pgsql.end_process manual__2024-07-15T21:14:59.913079+00:00 [queued]>
+[2024-07-15T21:15:25.899+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: csv_to_pgsql.end_process manual__2024-07-15T21:14:59.913079+00:00 [queued]>
+[2024-07-15T21:15:25.899+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-07-15T21:15:25.922+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): end_process> on 2024-07-15 21:14:59.913079+00:00
+[2024-07-15T21:15:25.934+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'csv_to_pgsql', 'end_process', 'manual__2024-07-15T21:14:59.913079+00:00', '--job-id', '296', '--raw', '--subdir', 'DAGS_FOLDER/from_csv_to_pgsql.py', '--cfg-path', '/tmp/tmp_u5xx0ql']
+[2024-07-15T21:15:25.936+0000] {standard_task_runner.py:91} INFO - Job 296: Subtask end_process
+[2024-07-15T21:15:25.938+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=513) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-07-15T21:15:25.939+0000] {standard_task_runner.py:63} INFO - Started process 519 to run task
+[2024-07-15T21:15:25.994+0000] {task_command.py:426} INFO - Running <TaskInstance: csv_to_pgsql.end_process manual__2024-07-15T21:14:59.913079+00:00 [running]> on host 347bc1cf7978
+[2024-07-15T21:15:26.120+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='csv_to_pgsql' AIRFLOW_CTX_TASK_ID='end_process' AIRFLOW_CTX_EXECUTION_DATE='2024-07-15T21:14:59.913079+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-07-15T21:14:59.913079+00:00'
+[2024-07-15T21:15:26.123+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-15T21:15:26.163+0000] {base.py:84} INFO - Using connection ID 'postgres_default' for task execution.
+[2024-07-15T21:15:26.193+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-07-15T21:15:26.194+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-15T21:15:26.205+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=csv_to_pgsql, task_id=end_process, run_id=manual__2024-07-15T21:14:59.913079+00:00, execution_date=20240715T211459, start_date=20240715T211525, end_date=20240715T211526
+[2024-07-15T21:15:26.237+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-07-15T21:15:26.260+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-15T21:15:26.265+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

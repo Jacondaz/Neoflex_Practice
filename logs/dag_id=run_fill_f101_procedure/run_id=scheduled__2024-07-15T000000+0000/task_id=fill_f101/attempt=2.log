@@ -1,0 +1,109 @@
+[2024-07-19T13:29:11.748+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-19T13:29:11.790+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: run_fill_f101_procedure.fill_f101 scheduled__2024-07-15T00:00:00+00:00 [queued]>
+[2024-07-19T13:29:11.802+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: run_fill_f101_procedure.fill_f101 scheduled__2024-07-15T00:00:00+00:00 [queued]>
+[2024-07-19T13:29:11.803+0000] {taskinstance.py:2306} INFO - Starting attempt 2 of 2
+[2024-07-19T13:29:11.821+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): fill_f101> on 2024-07-15 00:00:00+00:00
+[2024-07-19T13:29:11.829+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'run_fill_f101_procedure', 'fill_f101', 'scheduled__2024-07-15T00:00:00+00:00', '--job-id', '525', '--raw', '--subdir', 'DAGS_FOLDER/сreate_and_fill_f101_round_f.py', '--cfg-path', '/tmp/tmpv8qmajyp']
+[2024-07-19T13:29:11.833+0000] {standard_task_runner.py:91} INFO - Job 525: Subtask fill_f101
+[2024-07-19T13:29:11.835+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=491) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-07-19T13:29:11.836+0000] {standard_task_runner.py:63} INFO - Started process 496 to run task
+[2024-07-19T13:29:11.890+0000] {task_command.py:426} INFO - Running <TaskInstance: run_fill_f101_procedure.fill_f101 scheduled__2024-07-15T00:00:00+00:00 [running]> on host 7c7e02e57379
+[2024-07-19T13:29:12.002+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='run_fill_f101_procedure' AIRFLOW_CTX_TASK_ID='fill_f101' AIRFLOW_CTX_EXECUTION_DATE='2024-07-15T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-15T00:00:00+00:00'
+[2024-07-19T13:29:12.004+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-19T13:29:12.032+0000] {base.py:84} INFO - Using connection ID 'postgres_default' for task execution.
+[2024-07-19T13:29:12.041+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-19T13:29:12.043+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/сreate_and_fill_f101_round_f.py", line 102, in fill_f101_round_f
+    cursor.execute(sql)
+psycopg2.errors.UndefinedColumn: column "turn_deb_total" of relation "dm_f101_round_f" does not exist
+LINE 1: ...al, balance_in_total, turn_deb_rub, turn_deb_val, turn_deb_t...
+                                                             ^
+QUERY:  insert into dm.dm_f101_round_f(from_date, to_date, chapter, ledger_account, characteristic, balance_in_rub, balance_in_val, balance_in_total, turn_deb_rub, turn_deb_val, turn_deb_total, turn_cre_rub, turn_cre_val, turn_cre_total, balance_out_rub, balance_our_val, balance_out_total)
+	select
+		v_FromDate,
+		v_To_Date,
+		acc_s.chapter,
+		left(acc.account_number, 5) as ledger_account,
+		acc.char_type as characteristic,
+		sum(case when acc.currency_code in ('810', '643') then bal.balance_out_rub else 0 end) as balance_in_rub,
+		SUM(CASE WHEN acc.currency_code NOT IN ('810', '643') THEN bal.balance_out_rub ELSE 0 END) AS balance_in_val,
+        SUM(bal.balance_out_rub) AS balance_in_total,
+		SUM(CASE WHEN acc.currency_code IN ('810', '643') THEN turn.debet_amount_rub ELSE 0 END) AS turn_deb_rub,
+        SUM(CASE WHEN acc.currency_code NOT IN ('810', '643') THEN turn.debet_amount_rub ELSE 0 END) AS turn_deb_val,
+        SUM(turn.debet_amount_rub) AS turn_deb_total,
+        SUM(CASE WHEN acc.currency_code IN ('810', '643') THEN turn.credit_amount_rub ELSE 0 END) AS turn_cre_rub,
+        SUM(CASE WHEN acc.currency_code NOT IN ('810', '643') THEN turn.credit_amount_rub ELSE 0 END) AS turn_cre_val,
+        SUM(turn.credit_amount_rub) AS turn_cre_total,
+        SUM(CASE WHEN acc.currency_code IN ('810', '643') THEN bal_last.balance_out_rub ELSE 0 END) AS balance_out_rub,
+        SUM(CASE WHEN acc.currency_code NOT IN ('810', '643') THEN bal_last.balance_out_rub ELSE 0 END) AS balance_out_val,
+        SUM(bal_last.balance_out_rub) AS balance_out_total
+		from
+			ds.md_account_d acc
+			join ds.md_ledger_account_s acc_s on acc_s.ledger_account = left(acc.account_number, 5) 
+			LEFT JOIN DM.DM_ACCOUNT_BALANCE_F bal ON acc.account_rk = bal.account_rk AND bal.on_date = v_FromDate - 1
+			LEFT JOIN DM.DM_ACCOUNT_TURNOVER_F turn ON acc.account_rk = turn.account_rk AND turn.on_date BETWEEN v_FromDate AND v_ToDate
+        	LEFT JOIN DM.DM_ACCOUNT_BALANCE_F bal_last ON acc.account_rk = bal_last.account_rk AND bal_last.on_date = v_ToDate
+		GROUP BY
+        acc_s.chapter,
+        left(acc.account_number, 5),
+        acc.char_type
+CONTEXT:  PL/pgSQL function dm.fill_f101_round_f(date) line 12 at SQL statement
+SQL statement "CALL dm.fill_f101_round_f(d)"
+PL/pgSQL function inline_code_block line 5 at CALL
+
+[2024-07-19T13:29:12.065+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=run_fill_f101_procedure, task_id=fill_f101, run_id=scheduled__2024-07-15T00:00:00+00:00, execution_date=20240715T000000, start_date=20240719T132911, end_date=20240719T132912
+[2024-07-19T13:29:12.082+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 525 for task fill_f101 (column "turn_deb_total" of relation "dm_f101_round_f" does not exist
+LINE 1: ...al, balance_in_total, turn_deb_rub, turn_deb_val, turn_deb_t...
+                                                             ^
+QUERY:  insert into dm.dm_f101_round_f(from_date, to_date, chapter, ledger_account, characteristic, balance_in_rub, balance_in_val, balance_in_total, turn_deb_rub, turn_deb_val, turn_deb_total, turn_cre_rub, turn_cre_val, turn_cre_total, balance_out_rub, balance_our_val, balance_out_total)
+	select
+		v_FromDate,
+		v_To_Date,
+		acc_s.chapter,
+		left(acc.account_number, 5) as ledger_account,
+		acc.char_type as characteristic,
+		sum(case when acc.currency_code in ('810', '643') then bal.balance_out_rub else 0 end) as balance_in_rub,
+		SUM(CASE WHEN acc.currency_code NOT IN ('810', '643') THEN bal.balance_out_rub ELSE 0 END) AS balance_in_val,
+        SUM(bal.balance_out_rub) AS balance_in_total,
+		SUM(CASE WHEN acc.currency_code IN ('810', '643') THEN turn.debet_amount_rub ELSE 0 END) AS turn_deb_rub,
+        SUM(CASE WHEN acc.currency_code NOT IN ('810', '643') THEN turn.debet_amount_rub ELSE 0 END) AS turn_deb_val,
+        SUM(turn.debet_amount_rub) AS turn_deb_total,
+        SUM(CASE WHEN acc.currency_code IN ('810', '643') THEN turn.credit_amount_rub ELSE 0 END) AS turn_cre_rub,
+        SUM(CASE WHEN acc.currency_code NOT IN ('810', '643') THEN turn.credit_amount_rub ELSE 0 END) AS turn_cre_val,
+        SUM(turn.credit_amount_rub) AS turn_cre_total,
+        SUM(CASE WHEN acc.currency_code IN ('810', '643') THEN bal_last.balance_out_rub ELSE 0 END) AS balance_out_rub,
+        SUM(CASE WHEN acc.currency_code NOT IN ('810', '643') THEN bal_last.balance_out_rub ELSE 0 END) AS balance_out_val,
+        SUM(bal_last.balance_out_rub) AS balance_out_total
+		from
+			ds.md_account_d acc
+			join ds.md_ledger_account_s acc_s on acc_s.ledger_account = left(acc.account_number, 5) 
+			LEFT JOIN DM.DM_ACCOUNT_BALANCE_F bal ON acc.account_rk = bal.account_rk AND bal.on_date = v_FromDate - 1
+			LEFT JOIN DM.DM_ACCOUNT_TURNOVER_F turn ON acc.account_rk = turn.account_rk AND turn.on_date BETWEEN v_FromDate AND v_ToDate
+        	LEFT JOIN DM.DM_ACCOUNT_BALANCE_F bal_last ON acc.account_rk = bal_last.account_rk AND bal_last.on_date = v_ToDate
+		GROUP BY
+        acc_s.chapter,
+        left(acc.account_number, 5),
+        acc.char_type
+CONTEXT:  PL/pgSQL function dm.fill_f101_round_f(date) line 12 at SQL statement
+SQL statement "CALL dm.fill_f101_round_f(d)"
+PL/pgSQL function inline_code_block line 5 at CALL
+; 496)
+[2024-07-19T13:29:12.091+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2024-07-19T13:29:12.114+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-19T13:29:12.117+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

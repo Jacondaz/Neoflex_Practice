@@ -1,0 +1,395 @@
+[2024-07-19T19:55:46.930+0000] {processor.py:161} INFO - Started process (PID=18989) to work on /opt/airflow/dags/extract_and_load.py
+[2024-07-19T19:55:46.932+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extract_and_load.py for tasks to queue
+[2024-07-19T19:55:46.933+0000] {logging_mixin.py:188} INFO - [2024-07-19T19:55:46.933+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T19:55:47.037+0000] {logging_mixin.py:188} INFO - [2024-07-19T19:55:47.028+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/extract_and_load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/extract_and_load.py", line 52, in <module>
+    'start_date':datetime(2024, 7, 15),
+                 ^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'module' object is not callable. Did you mean: 'datetime.datetime(...)'?
+[2024-07-19T19:55:47.042+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T19:55:47.074+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extract_and_load.py took 0.149 seconds
+[2024-07-19T19:55:50.366+0000] {processor.py:161} INFO - Started process (PID=19011) to work on /opt/airflow/dags/extract_and_load.py
+[2024-07-19T19:55:50.367+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extract_and_load.py for tasks to queue
+[2024-07-19T19:55:50.368+0000] {logging_mixin.py:188} INFO - [2024-07-19T19:55:50.368+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T19:55:50.455+0000] {logging_mixin.py:188} INFO - [2024-07-19T19:55:50.451+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/extract_and_load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/extract_and_load.py", line 44, in <module>
+    'start_date':datetime(2024, 7, 15),
+                 ^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'module' object is not callable. Did you mean: 'datetime.datetime(...)'?
+[2024-07-19T19:55:50.456+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T19:55:50.474+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extract_and_load.py took 0.113 seconds
+[2024-07-19T19:56:21.016+0000] {processor.py:161} INFO - Started process (PID=19194) to work on /opt/airflow/dags/extract_and_load.py
+[2024-07-19T19:56:21.018+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extract_and_load.py for tasks to queue
+[2024-07-19T19:56:21.020+0000] {logging_mixin.py:188} INFO - [2024-07-19T19:56:21.019+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T19:56:21.122+0000] {logging_mixin.py:188} INFO - [2024-07-19T19:56:21.113+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/extract_and_load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/extract_and_load.py", line 44, in <module>
+    'start_date':datetime(2024, 7, 15),
+                 ^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'module' object is not callable. Did you mean: 'datetime.datetime(...)'?
+[2024-07-19T19:56:21.125+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T19:56:21.147+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extract_and_load.py took 0.137 seconds
+[2024-07-19T19:56:41.666+0000] {processor.py:161} INFO - Started process (PID=19209) to work on /opt/airflow/dags/extract_and_load.py
+[2024-07-19T19:56:41.667+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extract_and_load.py for tasks to queue
+[2024-07-19T19:56:41.668+0000] {logging_mixin.py:188} INFO - [2024-07-19T19:56:41.668+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T19:56:41.779+0000] {logging_mixin.py:188} INFO - [2024-07-19T19:56:41.773+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/extract_and_load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/extract_and_load.py", line 44, in <module>
+    'start_date':datetime(2024, 7, 15),
+                 ^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'module' object is not callable. Did you mean: 'datetime.datetime(...)'?
+[2024-07-19T19:56:41.782+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T19:56:41.803+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extract_and_load.py took 0.143 seconds
+[2024-07-19T19:56:46.745+0000] {processor.py:161} INFO - Started process (PID=19214) to work on /opt/airflow/dags/extract_and_load.py
+[2024-07-19T19:56:46.746+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extract_and_load.py for tasks to queue
+[2024-07-19T19:56:46.747+0000] {logging_mixin.py:188} INFO - [2024-07-19T19:56:46.747+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T19:56:46.832+0000] {logging_mixin.py:188} INFO - [2024-07-19T19:56:46.825+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/extract_and_load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/extract_and_load.py", line 44, in <module>
+    'start_date':datetime(2024, 7, 15),
+                 ^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'module' object is not callable. Did you mean: 'datetime.datetime(...)'?
+[2024-07-19T19:56:46.834+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T19:56:46.852+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extract_and_load.py took 0.111 seconds
+[2024-07-19T19:57:17.546+0000] {processor.py:161} INFO - Started process (PID=19240) to work on /opt/airflow/dags/extract_and_load.py
+[2024-07-19T19:57:17.548+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extract_and_load.py for tasks to queue
+[2024-07-19T19:57:17.549+0000] {logging_mixin.py:188} INFO - [2024-07-19T19:57:17.548+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T19:57:17.636+0000] {logging_mixin.py:188} INFO - [2024-07-19T19:57:17.628+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/extract_and_load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/extract_and_load.py", line 44, in <module>
+    'start_date':datetime(2024, 7, 15),
+                 ^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'module' object is not callable. Did you mean: 'datetime.datetime(...)'?
+[2024-07-19T19:57:17.638+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T19:57:17.657+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extract_and_load.py took 0.116 seconds
+[2024-07-19T19:57:28.075+0000] {processor.py:161} INFO - Started process (PID=19261) to work on /opt/airflow/dags/extract_and_load.py
+[2024-07-19T19:57:28.077+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extract_and_load.py for tasks to queue
+[2024-07-19T19:57:28.078+0000] {logging_mixin.py:188} INFO - [2024-07-19T19:57:28.078+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T19:57:28.165+0000] {processor.py:840} INFO - DAG(s) 'run_fill_f_101_round_f' retrieved from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T19:57:28.472+0000] {logging_mixin.py:188} INFO - [2024-07-19T19:57:28.472+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-19T19:57:28.495+0000] {logging_mixin.py:188} INFO - [2024-07-19T19:57:28.495+0000] {dag.py:3954} INFO - Setting next_dagrun for run_fill_f_101_round_f to 2024-07-19 00:00:00+00:00, run_after=2024-07-20 00:00:00+00:00
+[2024-07-19T19:57:28.530+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extract_and_load.py took 0.460 seconds
+[2024-07-19T19:57:47.923+0000] {processor.py:161} INFO - Started process (PID=19277) to work on /opt/airflow/dags/extract_and_load.py
+[2024-07-19T19:57:47.925+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extract_and_load.py for tasks to queue
+[2024-07-19T19:57:47.927+0000] {logging_mixin.py:188} INFO - [2024-07-19T19:57:47.926+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T19:57:48.046+0000] {processor.py:840} INFO - DAG(s) 'extract_and_load' retrieved from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T19:57:48.185+0000] {logging_mixin.py:188} INFO - [2024-07-19T19:57:48.166+0000] {override.py:1829} INFO - Created Permission View: can delete on DAG:extract_and_load
+[2024-07-19T19:57:48.195+0000] {logging_mixin.py:188} INFO - [2024-07-19T19:57:48.194+0000] {override.py:1829} INFO - Created Permission View: can edit on DAG:extract_and_load
+[2024-07-19T19:57:48.202+0000] {logging_mixin.py:188} INFO - [2024-07-19T19:57:48.202+0000] {override.py:1829} INFO - Created Permission View: can read on DAG:extract_and_load
+[2024-07-19T19:57:48.203+0000] {logging_mixin.py:188} INFO - [2024-07-19T19:57:48.203+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-19T19:57:48.215+0000] {logging_mixin.py:188} INFO - [2024-07-19T19:57:48.214+0000] {dag.py:3118} INFO - Creating ORM DAG for extract_and_load
+[2024-07-19T19:57:48.226+0000] {logging_mixin.py:188} INFO - [2024-07-19T19:57:48.226+0000] {dag.py:3954} INFO - Setting next_dagrun for extract_and_load to 2024-07-15 00:00:00+00:00, run_after=2024-07-16 00:00:00+00:00
+[2024-07-19T19:57:48.249+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extract_and_load.py took 0.332 seconds
+[2024-07-19T19:58:03.487+0000] {processor.py:161} INFO - Started process (PID=19297) to work on /opt/airflow/dags/extract_and_load.py
+[2024-07-19T19:58:03.488+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extract_and_load.py for tasks to queue
+[2024-07-19T19:58:03.489+0000] {logging_mixin.py:188} INFO - [2024-07-19T19:58:03.489+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T19:58:03.632+0000] {processor.py:840} INFO - DAG(s) 'extract_and_load' retrieved from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T19:58:03.644+0000] {logging_mixin.py:188} INFO - [2024-07-19T19:58:03.644+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-19T19:58:03.662+0000] {logging_mixin.py:188} INFO - [2024-07-19T19:58:03.662+0000] {dag.py:3954} INFO - Setting next_dagrun for extract_and_load to 2024-07-15 00:00:00+00:00, run_after=2024-07-16 00:00:00+00:00
+[2024-07-19T19:58:03.681+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extract_and_load.py took 0.199 seconds
+[2024-07-19T19:58:34.444+0000] {processor.py:161} INFO - Started process (PID=19324) to work on /opt/airflow/dags/extract_and_load.py
+[2024-07-19T19:58:34.445+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extract_and_load.py for tasks to queue
+[2024-07-19T19:58:34.447+0000] {logging_mixin.py:188} INFO - [2024-07-19T19:58:34.446+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T19:58:34.539+0000] {processor.py:840} INFO - DAG(s) 'extract_and_load' retrieved from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T19:58:34.628+0000] {logging_mixin.py:188} INFO - [2024-07-19T19:58:34.627+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-19T19:58:34.643+0000] {logging_mixin.py:188} INFO - [2024-07-19T19:58:34.642+0000] {dag.py:3954} INFO - Setting next_dagrun for extract_and_load to 2024-07-15 00:00:00+00:00, run_after=2024-07-16 00:00:00+00:00
+[2024-07-19T19:58:34.661+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extract_and_load.py took 0.224 seconds
+[2024-07-19T19:59:04.773+0000] {processor.py:161} INFO - Started process (PID=20249) to work on /opt/airflow/dags/extract_and_load.py
+[2024-07-19T19:59:04.774+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extract_and_load.py for tasks to queue
+[2024-07-19T19:59:04.775+0000] {logging_mixin.py:188} INFO - [2024-07-19T19:59:04.775+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T19:59:04.895+0000] {processor.py:840} INFO - DAG(s) 'extract_and_load' retrieved from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T19:59:04.936+0000] {logging_mixin.py:188} INFO - [2024-07-19T19:59:04.936+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-19T19:59:04.957+0000] {logging_mixin.py:188} INFO - [2024-07-19T19:59:04.957+0000] {dag.py:3954} INFO - Setting next_dagrun for extract_and_load to 2024-07-19 00:00:00+00:00, run_after=2024-07-20 00:00:00+00:00
+[2024-07-19T19:59:04.981+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extract_and_load.py took 0.213 seconds
+[2024-07-19T19:59:35.605+0000] {processor.py:161} INFO - Started process (PID=20325) to work on /opt/airflow/dags/extract_and_load.py
+[2024-07-19T19:59:35.610+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extract_and_load.py for tasks to queue
+[2024-07-19T19:59:35.617+0000] {logging_mixin.py:188} INFO - [2024-07-19T19:59:35.615+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T19:59:35.775+0000] {processor.py:840} INFO - DAG(s) 'extract_and_load' retrieved from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T19:59:35.804+0000] {logging_mixin.py:188} INFO - [2024-07-19T19:59:35.804+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-19T19:59:35.823+0000] {logging_mixin.py:188} INFO - [2024-07-19T19:59:35.823+0000] {dag.py:3954} INFO - Setting next_dagrun for extract_and_load to 2024-07-19 00:00:00+00:00, run_after=2024-07-20 00:00:00+00:00
+[2024-07-19T19:59:35.849+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extract_and_load.py took 0.272 seconds
+[2024-07-19T20:00:06.200+0000] {processor.py:161} INFO - Started process (PID=20490) to work on /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:00:06.201+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extract_and_load.py for tasks to queue
+[2024-07-19T20:00:06.202+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:00:06.202+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:00:06.300+0000] {processor.py:840} INFO - DAG(s) 'extract_and_load' retrieved from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:00:06.329+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:00:06.329+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-19T20:00:06.348+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:00:06.347+0000] {dag.py:3954} INFO - Setting next_dagrun for extract_and_load to 2024-07-19 00:00:00+00:00, run_after=2024-07-20 00:00:00+00:00
+[2024-07-19T20:00:06.367+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extract_and_load.py took 0.174 seconds
+[2024-07-19T20:00:36.994+0000] {processor.py:161} INFO - Started process (PID=20681) to work on /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:00:36.995+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extract_and_load.py for tasks to queue
+[2024-07-19T20:00:36.997+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:00:36.997+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:00:37.093+0000] {processor.py:840} INFO - DAG(s) 'extract_and_load' retrieved from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:00:37.118+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:00:37.118+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-19T20:00:37.138+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:00:37.138+0000] {dag.py:3954} INFO - Setting next_dagrun for extract_and_load to 2024-07-19 00:00:00+00:00, run_after=2024-07-20 00:00:00+00:00
+[2024-07-19T20:00:37.155+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extract_and_load.py took 0.168 seconds
+[2024-07-19T20:01:07.877+0000] {processor.py:161} INFO - Started process (PID=20707) to work on /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:01:07.878+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extract_and_load.py for tasks to queue
+[2024-07-19T20:01:07.880+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:01:07.879+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:01:07.962+0000] {processor.py:840} INFO - DAG(s) 'extract_and_load' retrieved from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:01:07.990+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:01:07.989+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-19T20:01:08.019+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:01:08.019+0000] {dag.py:3954} INFO - Setting next_dagrun for extract_and_load to 2024-07-19 00:00:00+00:00, run_after=2024-07-20 00:00:00+00:00
+[2024-07-19T20:01:08.052+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extract_and_load.py took 0.180 seconds
+[2024-07-19T20:01:38.654+0000] {processor.py:161} INFO - Started process (PID=20986) to work on /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:01:38.656+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extract_and_load.py for tasks to queue
+[2024-07-19T20:01:38.657+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:01:38.657+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:01:38.749+0000] {processor.py:840} INFO - DAG(s) 'extract_and_load' retrieved from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:01:38.775+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:01:38.775+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-19T20:01:38.793+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:01:38.793+0000] {dag.py:3954} INFO - Setting next_dagrun for extract_and_load to 2024-07-19 00:00:00+00:00, run_after=2024-07-20 00:00:00+00:00
+[2024-07-19T20:01:38.813+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extract_and_load.py took 0.165 seconds
+[2024-07-19T20:02:09.257+0000] {processor.py:161} INFO - Started process (PID=21198) to work on /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:02:09.258+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extract_and_load.py for tasks to queue
+[2024-07-19T20:02:09.259+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:02:09.259+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:02:09.334+0000] {processor.py:840} INFO - DAG(s) 'extract_and_load' retrieved from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:02:09.358+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:02:09.358+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-19T20:02:09.375+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:02:09.375+0000] {dag.py:3954} INFO - Setting next_dagrun for extract_and_load to 2024-07-19 00:00:00+00:00, run_after=2024-07-20 00:00:00+00:00
+[2024-07-19T20:02:09.393+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extract_and_load.py took 0.141 seconds
+[2024-07-19T20:02:40.027+0000] {processor.py:161} INFO - Started process (PID=21224) to work on /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:02:40.028+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extract_and_load.py for tasks to queue
+[2024-07-19T20:02:40.030+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:02:40.029+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:02:40.119+0000] {processor.py:840} INFO - DAG(s) 'extract_and_load' retrieved from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:02:40.150+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:02:40.150+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-19T20:02:40.173+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:02:40.173+0000] {dag.py:3954} INFO - Setting next_dagrun for extract_and_load to 2024-07-19 00:00:00+00:00, run_after=2024-07-20 00:00:00+00:00
+[2024-07-19T20:02:40.193+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extract_and_load.py took 0.172 seconds
+[2024-07-19T20:02:55.514+0000] {processor.py:161} INFO - Started process (PID=21240) to work on /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:02:55.516+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extract_and_load.py for tasks to queue
+[2024-07-19T20:02:55.517+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:02:55.517+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:02:55.651+0000] {processor.py:840} INFO - DAG(s) 'extract_and_load' retrieved from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:02:55.972+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:02:55.972+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-19T20:02:55.989+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:02:55.989+0000] {dag.py:3954} INFO - Setting next_dagrun for extract_and_load to 2024-07-19 00:00:00+00:00, run_after=2024-07-20 00:00:00+00:00
+[2024-07-19T20:02:56.017+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extract_and_load.py took 0.507 seconds
+[2024-07-19T20:03:09.941+0000] {processor.py:161} INFO - Started process (PID=21764) to work on /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:03:09.942+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extract_and_load.py for tasks to queue
+[2024-07-19T20:03:09.943+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:03:09.943+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:03:10.035+0000] {processor.py:840} INFO - DAG(s) 'extract_and_load' retrieved from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:03:10.048+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:03:10.048+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-19T20:03:10.065+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:03:10.065+0000] {dag.py:3954} INFO - Setting next_dagrun for extract_and_load to 2024-07-19 00:00:00+00:00, run_after=2024-07-20 00:00:00+00:00
+[2024-07-19T20:03:10.087+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extract_and_load.py took 0.151 seconds
+[2024-07-19T20:03:11.005+0000] {processor.py:161} INFO - Started process (PID=21769) to work on /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:03:11.007+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extract_and_load.py for tasks to queue
+[2024-07-19T20:03:11.008+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:03:11.007+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:03:11.128+0000] {processor.py:840} INFO - DAG(s) 'extract_and_load' retrieved from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:03:11.143+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:03:11.143+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-19T20:03:11.161+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:03:11.160+0000] {dag.py:3954} INFO - Setting next_dagrun for extract_and_load to 2024-07-19 00:00:00+00:00, run_after=2024-07-20 00:00:00+00:00
+[2024-07-19T20:03:11.187+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extract_and_load.py took 0.186 seconds
+[2024-07-19T20:03:41.813+0000] {processor.py:161} INFO - Started process (PID=22126) to work on /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:03:41.814+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extract_and_load.py for tasks to queue
+[2024-07-19T20:03:41.815+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:03:41.815+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:03:41.886+0000] {processor.py:840} INFO - DAG(s) 'extract_and_load' retrieved from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:03:41.910+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:03:41.909+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-19T20:03:41.926+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:03:41.926+0000] {dag.py:3954} INFO - Setting next_dagrun for extract_and_load to 2024-07-19 00:00:00+00:00, run_after=2024-07-20 00:00:00+00:00
+[2024-07-19T20:03:41.943+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extract_and_load.py took 0.134 seconds
+[2024-07-19T20:03:56.176+0000] {processor.py:161} INFO - Started process (PID=22144) to work on /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:03:56.178+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extract_and_load.py for tasks to queue
+[2024-07-19T20:03:56.179+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:03:56.179+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:03:56.275+0000] {processor.py:840} INFO - DAG(s) 'extract_and_load' retrieved from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:03:56.306+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:03:56.306+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-19T20:03:56.326+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:03:56.326+0000] {dag.py:3954} INFO - Setting next_dagrun for extract_and_load to 2024-07-19 00:00:00+00:00, run_after=2024-07-20 00:00:00+00:00
+[2024-07-19T20:03:56.357+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extract_and_load.py took 0.187 seconds
+[2024-07-19T20:03:57.243+0000] {processor.py:161} INFO - Started process (PID=22250) to work on /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:03:57.245+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extract_and_load.py for tasks to queue
+[2024-07-19T20:03:57.246+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:03:57.246+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:03:57.396+0000] {processor.py:840} INFO - DAG(s) 'extract_and_load' retrieved from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:03:57.429+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:03:57.429+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-19T20:03:57.461+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:03:57.461+0000] {dag.py:3954} INFO - Setting next_dagrun for extract_and_load to 2024-07-19 00:00:00+00:00, run_after=2024-07-20 00:00:00+00:00
+[2024-07-19T20:03:57.496+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extract_and_load.py took 0.259 seconds
+[2024-07-19T20:04:27.637+0000] {processor.py:161} INFO - Started process (PID=22683) to work on /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:04:27.640+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extract_and_load.py for tasks to queue
+[2024-07-19T20:04:27.641+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:04:27.640+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:04:27.760+0000] {processor.py:840} INFO - DAG(s) 'extract_and_load' retrieved from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:04:27.802+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:04:27.802+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-19T20:04:27.826+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:04:27.825+0000] {dag.py:3954} INFO - Setting next_dagrun for extract_and_load to 2024-07-19 00:00:00+00:00, run_after=2024-07-20 00:00:00+00:00
+[2024-07-19T20:04:27.854+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extract_and_load.py took 0.224 seconds
+[2024-07-19T20:04:58.543+0000] {processor.py:161} INFO - Started process (PID=22834) to work on /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:04:58.546+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extract_and_load.py for tasks to queue
+[2024-07-19T20:04:58.548+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:04:58.547+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:04:58.763+0000] {processor.py:840} INFO - DAG(s) 'extract_and_load' retrieved from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:04:58.822+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:04:58.821+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-19T20:04:58.848+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:04:58.848+0000] {dag.py:3954} INFO - Setting next_dagrun for extract_and_load to 2024-07-19 00:00:00+00:00, run_after=2024-07-20 00:00:00+00:00
+[2024-07-19T20:04:58.874+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extract_and_load.py took 0.354 seconds
+[2024-07-19T20:05:29.335+0000] {processor.py:161} INFO - Started process (PID=23070) to work on /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:05:29.336+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extract_and_load.py for tasks to queue
+[2024-07-19T20:05:29.337+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:05:29.337+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:05:29.418+0000] {processor.py:840} INFO - DAG(s) 'extract_and_load' retrieved from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:05:29.444+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:05:29.443+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-19T20:05:29.463+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:05:29.462+0000] {dag.py:3954} INFO - Setting next_dagrun for extract_and_load to 2024-07-19 00:00:00+00:00, run_after=2024-07-20 00:00:00+00:00
+[2024-07-19T20:05:29.486+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extract_and_load.py took 0.158 seconds
+[2024-07-19T20:05:39.716+0000] {processor.py:161} INFO - Started process (PID=23085) to work on /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:05:39.717+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extract_and_load.py for tasks to queue
+[2024-07-19T20:05:39.718+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:05:39.718+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:05:39.847+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:05:39.831+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/extract_and_load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/extract_and_load.py", line 56, in <module>
+    python_callable=extract_from_pg_and_to_pg,
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'extract_from_pg_and_to_pg' is not defined. Did you mean: 'extract_from_pg_and_to_csv'?
+[2024-07-19T20:05:39.851+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:05:39.888+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extract_and_load.py took 0.178 seconds
+[2024-07-19T20:05:59.346+0000] {processor.py:161} INFO - Started process (PID=23101) to work on /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:05:59.347+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extract_and_load.py for tasks to queue
+[2024-07-19T20:05:59.349+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:05:59.348+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:05:59.440+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:05:59.434+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/extract_and_load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/extract_and_load.py", line 56, in <module>
+    python_callable=extract_from_csv_to_csv,
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'extract_from_csv_to_csv' is not defined. Did you mean: 'extract_from_csv_to_pg'?
+[2024-07-19T20:05:59.443+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:05:59.464+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extract_and_load.py took 0.122 seconds
+[2024-07-19T20:06:14.723+0000] {processor.py:161} INFO - Started process (PID=23116) to work on /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:06:14.725+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extract_and_load.py for tasks to queue
+[2024-07-19T20:06:14.727+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:06:14.727+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:06:14.823+0000] {processor.py:840} INFO - DAG(s) 'extract_and_load' retrieved from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:06:14.852+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:06:14.852+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-19T20:06:14.871+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:06:14.871+0000] {dag.py:3954} INFO - Setting next_dagrun for extract_and_load to 2024-07-19 00:00:00+00:00, run_after=2024-07-20 00:00:00+00:00
+[2024-07-19T20:06:14.903+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extract_and_load.py took 0.185 seconds
+[2024-07-19T20:06:38.519+0000] {processor.py:161} INFO - Started process (PID=23476) to work on /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:06:38.521+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extract_and_load.py for tasks to queue
+[2024-07-19T20:06:38.522+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:06:38.521+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:06:38.611+0000] {processor.py:840} INFO - DAG(s) 'extract_and_load' retrieved from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:06:38.637+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:06:38.637+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-19T20:06:38.654+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:06:38.654+0000] {dag.py:3954} INFO - Setting next_dagrun for extract_and_load to 2024-07-19 00:00:00+00:00, run_after=2024-07-20 00:00:00+00:00
+[2024-07-19T20:06:38.682+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extract_and_load.py took 0.170 seconds
+[2024-07-19T20:07:09.136+0000] {processor.py:161} INFO - Started process (PID=23492) to work on /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:07:09.137+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extract_and_load.py for tasks to queue
+[2024-07-19T20:07:09.139+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:07:09.138+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:07:09.236+0000] {processor.py:840} INFO - DAG(s) 'extract_and_load' retrieved from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:07:09.290+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:07:09.290+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-19T20:07:09.327+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:07:09.327+0000] {dag.py:3954} INFO - Setting next_dagrun for extract_and_load to 2024-07-19 00:00:00+00:00, run_after=2024-07-20 00:00:00+00:00
+[2024-07-19T20:07:09.351+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extract_and_load.py took 0.222 seconds
+[2024-07-19T20:07:09.648+0000] {processor.py:161} INFO - Started process (PID=23507) to work on /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:07:09.649+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extract_and_load.py for tasks to queue
+[2024-07-19T20:07:09.651+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:07:09.650+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:07:09.761+0000] {processor.py:840} INFO - DAG(s) 'extract_and_load' retrieved from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:07:09.789+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:07:09.788+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-19T20:07:09.809+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:07:09.809+0000] {dag.py:3954} INFO - Setting next_dagrun for extract_and_load to 2024-07-19 00:00:00+00:00, run_after=2024-07-20 00:00:00+00:00
+[2024-07-19T20:07:09.834+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extract_and_load.py took 0.191 seconds
+[2024-07-19T20:07:29.293+0000] {processor.py:161} INFO - Started process (PID=23523) to work on /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:07:29.294+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extract_and_load.py for tasks to queue
+[2024-07-19T20:07:29.295+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:07:29.295+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:07:29.378+0000] {processor.py:840} INFO - DAG(s) 'extract_and_load' retrieved from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:07:29.403+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:07:29.403+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-19T20:07:29.420+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:07:29.420+0000] {dag.py:3954} INFO - Setting next_dagrun for extract_and_load to 2024-07-19 00:00:00+00:00, run_after=2024-07-20 00:00:00+00:00
+[2024-07-19T20:07:29.446+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extract_and_load.py took 0.158 seconds
+[2024-07-19T20:07:59.524+0000] {processor.py:161} INFO - Started process (PID=23549) to work on /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:07:59.525+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extract_and_load.py for tasks to queue
+[2024-07-19T20:07:59.526+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:07:59.526+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:07:59.690+0000] {processor.py:840} INFO - DAG(s) 'extract_and_load' retrieved from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:07:59.958+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:07:59.957+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-19T20:07:59.971+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:07:59.971+0000] {dag.py:3118} INFO - Creating ORM DAG for extract_and_load
+[2024-07-19T20:07:59.983+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:07:59.982+0000] {dag.py:3954} INFO - Setting next_dagrun for extract_and_load to 2024-07-15 00:00:00+00:00, run_after=2024-07-16 00:00:00+00:00
+[2024-07-19T20:08:00.006+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extract_and_load.py took 0.488 seconds
+[2024-07-19T20:08:06.852+0000] {processor.py:161} INFO - Started process (PID=23554) to work on /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:08:06.853+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extract_and_load.py for tasks to queue
+[2024-07-19T20:08:06.854+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:08:06.854+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:08:06.943+0000] {processor.py:840} INFO - DAG(s) 'extract_and_load_1' retrieved from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:08:07.061+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:08:07.035+0000] {override.py:1829} INFO - Created Permission View: can delete on DAG:extract_and_load_1
+[2024-07-19T20:08:07.076+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:08:07.074+0000] {override.py:1829} INFO - Created Permission View: can edit on DAG:extract_and_load_1
+[2024-07-19T20:08:07.096+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:08:07.095+0000] {override.py:1829} INFO - Created Permission View: can read on DAG:extract_and_load_1
+[2024-07-19T20:08:07.098+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:08:07.097+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-19T20:08:07.118+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:08:07.117+0000] {dag.py:3118} INFO - Creating ORM DAG for extract_and_load_1
+[2024-07-19T20:08:07.132+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:08:07.131+0000] {dag.py:3954} INFO - Setting next_dagrun for extract_and_load_1 to 2024-07-15 00:00:00+00:00, run_after=2024-07-16 00:00:00+00:00
+[2024-07-19T20:08:07.157+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extract_and_load.py took 0.311 seconds
+[2024-07-19T20:08:37.226+0000] {processor.py:161} INFO - Started process (PID=23580) to work on /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:08:37.227+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extract_and_load.py for tasks to queue
+[2024-07-19T20:08:37.228+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:08:37.228+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:08:37.308+0000] {processor.py:840} INFO - DAG(s) 'extract_and_load_1' retrieved from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:08:37.335+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:08:37.335+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-19T20:08:37.352+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:08:37.352+0000] {dag.py:3954} INFO - Setting next_dagrun for extract_and_load_1 to 2024-07-15 00:00:00+00:00, run_after=2024-07-16 00:00:00+00:00
+[2024-07-19T20:08:37.372+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extract_and_load.py took 0.152 seconds
+[2024-07-19T20:08:40.317+0000] {processor.py:161} INFO - Started process (PID=23585) to work on /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:08:40.318+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extract_and_load.py for tasks to queue
+[2024-07-19T20:08:40.319+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:08:40.319+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:08:40.405+0000] {processor.py:840} INFO - DAG(s) 'extract_and_load_1' retrieved from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:08:40.499+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:08:40.499+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-19T20:08:40.518+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:08:40.518+0000] {dag.py:3954} INFO - Setting next_dagrun for extract_and_load_1 to 2024-07-15 00:00:00+00:00, run_after=2024-07-16 00:00:00+00:00
+[2024-07-19T20:08:40.554+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extract_and_load.py took 0.243 seconds
+[2024-07-19T20:09:11.293+0000] {processor.py:161} INFO - Started process (PID=24096) to work on /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:09:11.296+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extract_and_load.py for tasks to queue
+[2024-07-19T20:09:11.300+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:09:11.298+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:09:11.588+0000] {processor.py:840} INFO - DAG(s) 'extract_and_load_1' retrieved from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:09:11.740+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:09:11.739+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-19T20:09:11.874+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:09:11.873+0000] {dag.py:3954} INFO - Setting next_dagrun for extract_and_load_1 to 2024-07-19 00:00:00+00:00, run_after=2024-07-20 00:00:00+00:00
+[2024-07-19T20:09:11.961+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extract_and_load.py took 0.686 seconds
+[2024-07-19T20:09:42.349+0000] {processor.py:161} INFO - Started process (PID=24468) to work on /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:09:42.352+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extract_and_load.py for tasks to queue
+[2024-07-19T20:09:42.355+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:09:42.355+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:09:42.469+0000] {processor.py:840} INFO - DAG(s) 'extract_and_load_1' retrieved from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:09:42.498+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:09:42.498+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-19T20:09:42.519+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:09:42.518+0000] {dag.py:3954} INFO - Setting next_dagrun for extract_and_load_1 to 2024-07-19 00:00:00+00:00, run_after=2024-07-20 00:00:00+00:00
+[2024-07-19T20:09:42.539+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extract_and_load.py took 0.196 seconds
+[2024-07-19T20:10:13.293+0000] {processor.py:161} INFO - Started process (PID=24494) to work on /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:10:13.295+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extract_and_load.py for tasks to queue
+[2024-07-19T20:10:13.296+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:10:13.296+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:10:13.381+0000] {processor.py:840} INFO - DAG(s) 'extract_and_load_1' retrieved from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:10:13.408+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:10:13.408+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-19T20:10:13.426+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:10:13.426+0000] {dag.py:3954} INFO - Setting next_dagrun for extract_and_load_1 to 2024-07-19 00:00:00+00:00, run_after=2024-07-20 00:00:00+00:00
+[2024-07-19T20:10:13.448+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extract_and_load.py took 0.161 seconds
+[2024-07-19T20:10:44.210+0000] {processor.py:161} INFO - Started process (PID=24520) to work on /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:10:44.211+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extract_and_load.py for tasks to queue
+[2024-07-19T20:10:44.213+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:10:44.212+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:10:44.311+0000] {processor.py:840} INFO - DAG(s) 'extract_and_load_1' retrieved from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:10:44.348+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:10:44.348+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-19T20:10:44.372+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:10:44.372+0000] {dag.py:3954} INFO - Setting next_dagrun for extract_and_load_1 to 2024-07-19 00:00:00+00:00, run_after=2024-07-20 00:00:00+00:00
+[2024-07-19T20:10:44.391+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extract_and_load.py took 0.191 seconds
+[2024-07-19T20:11:15.372+0000] {processor.py:161} INFO - Started process (PID=24547) to work on /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:11:15.373+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extract_and_load.py for tasks to queue
+[2024-07-19T20:11:15.374+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:11:15.374+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:11:15.483+0000] {processor.py:840} INFO - DAG(s) 'extract_and_load_1' retrieved from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:11:15.510+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:11:15.510+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-19T20:11:15.530+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:11:15.529+0000] {dag.py:3954} INFO - Setting next_dagrun for extract_and_load_1 to 2024-07-19 00:00:00+00:00, run_after=2024-07-20 00:00:00+00:00
+[2024-07-19T20:11:15.549+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extract_and_load.py took 0.185 seconds
+[2024-07-19T20:11:25.757+0000] {processor.py:161} INFO - Started process (PID=24568) to work on /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:11:25.758+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extract_and_load.py for tasks to queue
+[2024-07-19T20:11:25.760+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:11:25.759+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:11:25.862+0000] {processor.py:840} INFO - DAG(s) 'extract_and_load_1' retrieved from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:11:25.885+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:11:25.885+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-19T20:11:25.904+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:11:25.904+0000] {dag.py:3954} INFO - Setting next_dagrun for extract_and_load_1 to 2024-07-19 00:00:00+00:00, run_after=2024-07-20 00:00:00+00:00
+[2024-07-19T20:11:25.950+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extract_and_load.py took 0.198 seconds
+[2024-07-19T20:11:56.373+0000] {processor.py:161} INFO - Started process (PID=24770) to work on /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:11:56.374+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extract_and_load.py for tasks to queue
+[2024-07-19T20:11:56.375+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:11:56.375+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:11:56.460+0000] {processor.py:840} INFO - DAG(s) 'extract_and_load_1' retrieved from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:11:56.488+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:11:56.488+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-19T20:11:56.506+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:11:56.506+0000] {dag.py:3954} INFO - Setting next_dagrun for extract_and_load_1 to 2024-07-19 00:00:00+00:00, run_after=2024-07-20 00:00:00+00:00
+[2024-07-19T20:11:56.531+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extract_and_load.py took 0.163 seconds
+[2024-07-19T20:12:27.137+0000] {processor.py:161} INFO - Started process (PID=24796) to work on /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:12:27.139+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extract_and_load.py for tasks to queue
+[2024-07-19T20:12:27.140+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:12:27.139+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:12:27.244+0000] {processor.py:840} INFO - DAG(s) 'extract_and_load_1' retrieved from /opt/airflow/dags/extract_and_load.py
+[2024-07-19T20:12:27.272+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:12:27.272+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-19T20:12:27.291+0000] {logging_mixin.py:188} INFO - [2024-07-19T20:12:27.291+0000] {dag.py:3954} INFO - Setting next_dagrun for extract_and_load_1 to 2024-07-19 00:00:00+00:00, run_after=2024-07-20 00:00:00+00:00
+[2024-07-19T20:12:27.314+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extract_and_load.py took 0.182 seconds

@@ -1,0 +1,463 @@
+[2024-07-13T22:29:35.436+0000] {processor.py:161} INFO - Started process (PID=169) to work on /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T22:29:35.438+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/from_csv_to_pgsql.py for tasks to queue
+[2024-07-13T22:29:35.441+0000] {logging_mixin.py:188} INFO - [2024-07-13T22:29:35.441+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T22:29:35.482+0000] {logging_mixin.py:188} INFO - [2024-07-13T22:29:35.473+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/from_csv_to_pgsql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/from_csv_to_pgsql.py", line 4, in <module>
+    from pyspark.sql import SparkSession
+ModuleNotFoundError: No module named 'pyspark'
+[2024-07-13T22:29:35.485+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T22:29:35.512+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/from_csv_to_pgsql.py took 0.086 seconds
+[2024-07-13T22:30:06.074+0000] {processor.py:161} INFO - Started process (PID=181) to work on /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T22:30:06.078+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/from_csv_to_pgsql.py for tasks to queue
+[2024-07-13T22:30:06.084+0000] {logging_mixin.py:188} INFO - [2024-07-13T22:30:06.082+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T22:30:06.185+0000] {logging_mixin.py:188} INFO - [2024-07-13T22:30:06.142+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/from_csv_to_pgsql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/from_csv_to_pgsql.py", line 4, in <module>
+    from pyspark.sql import SparkSession
+ModuleNotFoundError: No module named 'pyspark'
+[2024-07-13T22:30:06.195+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T22:30:06.234+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/from_csv_to_pgsql.py took 0.172 seconds
+[2024-07-13T22:30:36.745+0000] {processor.py:161} INFO - Started process (PID=192) to work on /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T22:30:36.767+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/from_csv_to_pgsql.py for tasks to queue
+[2024-07-13T22:30:36.841+0000] {logging_mixin.py:188} INFO - [2024-07-13T22:30:36.840+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T22:30:36.888+0000] {logging_mixin.py:188} INFO - [2024-07-13T22:30:36.875+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/from_csv_to_pgsql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/from_csv_to_pgsql.py", line 4, in <module>
+    from pyspark.sql import SparkSession
+ModuleNotFoundError: No module named 'pyspark'
+[2024-07-13T22:30:36.896+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T22:30:36.962+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/from_csv_to_pgsql.py took 0.269 seconds
+[2024-07-13T22:31:07.537+0000] {processor.py:161} INFO - Started process (PID=203) to work on /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T22:31:07.538+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/from_csv_to_pgsql.py for tasks to queue
+[2024-07-13T22:31:07.545+0000] {logging_mixin.py:188} INFO - [2024-07-13T22:31:07.544+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T22:31:07.670+0000] {logging_mixin.py:188} INFO - [2024-07-13T22:31:07.625+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/from_csv_to_pgsql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/from_csv_to_pgsql.py", line 4, in <module>
+    from pyspark.sql import SparkSession
+ModuleNotFoundError: No module named 'pyspark'
+[2024-07-13T22:31:07.685+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T22:31:07.741+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/from_csv_to_pgsql.py took 0.259 seconds
+[2024-07-13T22:31:38.441+0000] {processor.py:161} INFO - Started process (PID=214) to work on /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T22:31:38.445+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/from_csv_to_pgsql.py for tasks to queue
+[2024-07-13T22:31:38.449+0000] {logging_mixin.py:188} INFO - [2024-07-13T22:31:38.449+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T22:31:38.480+0000] {logging_mixin.py:188} INFO - [2024-07-13T22:31:38.473+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/from_csv_to_pgsql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/from_csv_to_pgsql.py", line 4, in <module>
+    from pyspark.sql import SparkSession
+ModuleNotFoundError: No module named 'pyspark'
+[2024-07-13T22:31:38.483+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T22:31:38.572+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/from_csv_to_pgsql.py took 0.177 seconds
+[2024-07-13T22:32:09.363+0000] {processor.py:161} INFO - Started process (PID=225) to work on /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T22:32:09.364+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/from_csv_to_pgsql.py for tasks to queue
+[2024-07-13T22:32:09.367+0000] {logging_mixin.py:188} INFO - [2024-07-13T22:32:09.366+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T22:32:09.526+0000] {logging_mixin.py:188} INFO - [2024-07-13T22:32:09.494+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/from_csv_to_pgsql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/from_csv_to_pgsql.py", line 4, in <module>
+    from pyspark.sql import SparkSession
+ModuleNotFoundError: No module named 'pyspark'
+[2024-07-13T22:32:09.539+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T22:32:09.645+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/from_csv_to_pgsql.py took 0.305 seconds
+[2024-07-13T22:32:40.252+0000] {processor.py:161} INFO - Started process (PID=237) to work on /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T22:32:40.256+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/from_csv_to_pgsql.py for tasks to queue
+[2024-07-13T22:32:40.298+0000] {logging_mixin.py:188} INFO - [2024-07-13T22:32:40.295+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T22:32:40.483+0000] {logging_mixin.py:188} INFO - [2024-07-13T22:32:40.451+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/from_csv_to_pgsql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/from_csv_to_pgsql.py", line 4, in <module>
+    from pyspark.sql import SparkSession
+ModuleNotFoundError: No module named 'pyspark'
+[2024-07-13T22:32:40.498+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T22:32:40.701+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/from_csv_to_pgsql.py took 0.491 seconds
+[2024-07-13T22:33:11.542+0000] {processor.py:161} INFO - Started process (PID=248) to work on /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T22:33:11.546+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/from_csv_to_pgsql.py for tasks to queue
+[2024-07-13T22:33:11.590+0000] {logging_mixin.py:188} INFO - [2024-07-13T22:33:11.588+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T22:33:11.708+0000] {logging_mixin.py:188} INFO - [2024-07-13T22:33:11.699+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/from_csv_to_pgsql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/from_csv_to_pgsql.py", line 4, in <module>
+    from pyspark.sql import SparkSession
+ModuleNotFoundError: No module named 'pyspark'
+[2024-07-13T22:33:11.711+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T22:33:11.734+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/from_csv_to_pgsql.py took 0.227 seconds
+[2024-07-13T22:33:42.494+0000] {processor.py:161} INFO - Started process (PID=259) to work on /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T22:33:42.497+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/from_csv_to_pgsql.py for tasks to queue
+[2024-07-13T22:33:42.503+0000] {logging_mixin.py:188} INFO - [2024-07-13T22:33:42.502+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T22:33:42.670+0000] {logging_mixin.py:188} INFO - [2024-07-13T22:33:42.631+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/from_csv_to_pgsql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/from_csv_to_pgsql.py", line 4, in <module>
+    from pyspark.sql import SparkSession
+ModuleNotFoundError: No module named 'pyspark'
+[2024-07-13T22:33:42.685+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T22:33:42.884+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/from_csv_to_pgsql.py took 0.423 seconds
+[2024-07-13T22:37:54.113+0000] {processor.py:161} INFO - Started process (PID=169) to work on /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T22:37:54.115+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/from_csv_to_pgsql.py for tasks to queue
+[2024-07-13T22:37:54.118+0000] {logging_mixin.py:188} INFO - [2024-07-13T22:37:54.117+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T22:37:54.141+0000] {logging_mixin.py:188} INFO - [2024-07-13T22:37:54.136+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/from_csv_to_pgsql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/from_csv_to_pgsql.py", line 4, in <module>
+    from pyspark.sql import SparkSession
+ModuleNotFoundError: No module named 'pyspark'
+[2024-07-13T22:37:54.143+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T22:37:54.164+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/from_csv_to_pgsql.py took 0.059 seconds
+[2024-07-13T22:38:25.010+0000] {processor.py:161} INFO - Started process (PID=180) to work on /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T22:38:25.014+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/from_csv_to_pgsql.py for tasks to queue
+[2024-07-13T22:38:25.033+0000] {logging_mixin.py:188} INFO - [2024-07-13T22:38:25.029+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T22:38:25.169+0000] {logging_mixin.py:188} INFO - [2024-07-13T22:38:25.136+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/from_csv_to_pgsql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/from_csv_to_pgsql.py", line 4, in <module>
+    from pyspark.sql import SparkSession
+ModuleNotFoundError: No module named 'pyspark'
+[2024-07-13T22:38:25.185+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T22:38:25.398+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/from_csv_to_pgsql.py took 0.435 seconds
+[2024-07-13T22:38:55.611+0000] {processor.py:161} INFO - Started process (PID=191) to work on /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T22:38:55.612+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/from_csv_to_pgsql.py for tasks to queue
+[2024-07-13T22:38:55.614+0000] {logging_mixin.py:188} INFO - [2024-07-13T22:38:55.614+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T22:38:55.635+0000] {logging_mixin.py:188} INFO - [2024-07-13T22:38:55.630+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/from_csv_to_pgsql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/from_csv_to_pgsql.py", line 4, in <module>
+    from pyspark.sql import SparkSession
+ModuleNotFoundError: No module named 'pyspark'
+[2024-07-13T22:38:55.637+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T22:38:55.660+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/from_csv_to_pgsql.py took 0.054 seconds
+[2024-07-13T22:39:26.548+0000] {processor.py:161} INFO - Started process (PID=203) to work on /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T22:39:26.555+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/from_csv_to_pgsql.py for tasks to queue
+[2024-07-13T22:39:26.558+0000] {logging_mixin.py:188} INFO - [2024-07-13T22:39:26.557+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T22:39:26.594+0000] {logging_mixin.py:188} INFO - [2024-07-13T22:39:26.587+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/from_csv_to_pgsql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/from_csv_to_pgsql.py", line 4, in <module>
+    from pyspark.sql import SparkSession
+ModuleNotFoundError: No module named 'pyspark'
+[2024-07-13T22:39:26.597+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T22:39:26.647+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/from_csv_to_pgsql.py took 0.115 seconds
+[2024-07-13T22:39:57.417+0000] {processor.py:161} INFO - Started process (PID=214) to work on /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T22:39:57.428+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/from_csv_to_pgsql.py for tasks to queue
+[2024-07-13T22:39:57.459+0000] {logging_mixin.py:188} INFO - [2024-07-13T22:39:57.454+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T22:39:57.554+0000] {logging_mixin.py:188} INFO - [2024-07-13T22:39:57.535+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/from_csv_to_pgsql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/from_csv_to_pgsql.py", line 4, in <module>
+    from pyspark.sql import SparkSession
+ModuleNotFoundError: No module named 'pyspark'
+[2024-07-13T22:39:57.562+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T22:39:57.673+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/from_csv_to_pgsql.py took 0.304 seconds
+[2024-07-13T22:40:28.117+0000] {processor.py:161} INFO - Started process (PID=225) to work on /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T22:40:28.118+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/from_csv_to_pgsql.py for tasks to queue
+[2024-07-13T22:40:28.120+0000] {logging_mixin.py:188} INFO - [2024-07-13T22:40:28.120+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T22:40:28.143+0000] {logging_mixin.py:188} INFO - [2024-07-13T22:40:28.139+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/from_csv_to_pgsql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/from_csv_to_pgsql.py", line 4, in <module>
+    from pyspark.sql import SparkSession
+ModuleNotFoundError: No module named 'pyspark'
+[2024-07-13T22:40:28.144+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T22:40:28.167+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/from_csv_to_pgsql.py took 0.057 seconds
+[2024-07-13T22:40:58.933+0000] {processor.py:161} INFO - Started process (PID=236) to work on /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T22:40:58.935+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/from_csv_to_pgsql.py for tasks to queue
+[2024-07-13T22:40:58.936+0000] {logging_mixin.py:188} INFO - [2024-07-13T22:40:58.936+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T22:40:58.958+0000] {logging_mixin.py:188} INFO - [2024-07-13T22:40:58.953+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/from_csv_to_pgsql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/from_csv_to_pgsql.py", line 4, in <module>
+    from pyspark.sql import SparkSession
+ModuleNotFoundError: No module named 'pyspark'
+[2024-07-13T22:40:58.959+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T22:40:58.980+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/from_csv_to_pgsql.py took 0.050 seconds
+[2024-07-13T22:41:29.723+0000] {processor.py:161} INFO - Started process (PID=247) to work on /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T22:41:29.724+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/from_csv_to_pgsql.py for tasks to queue
+[2024-07-13T22:41:29.726+0000] {logging_mixin.py:188} INFO - [2024-07-13T22:41:29.726+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T22:41:29.746+0000] {logging_mixin.py:188} INFO - [2024-07-13T22:41:29.741+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/from_csv_to_pgsql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/from_csv_to_pgsql.py", line 4, in <module>
+    from pyspark.sql import SparkSession
+ModuleNotFoundError: No module named 'pyspark'
+[2024-07-13T22:41:29.748+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T22:41:29.765+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/from_csv_to_pgsql.py took 0.046 seconds
+[2024-07-13T23:52:14.762+0000] {processor.py:161} INFO - Started process (PID=283) to work on /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T23:52:14.766+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/from_csv_to_pgsql.py for tasks to queue
+[2024-07-13T23:52:14.773+0000] {logging_mixin.py:188} INFO - [2024-07-13T23:52:14.772+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T23:52:14.969+0000] {logging_mixin.py:188} INFO - [2024-07-13T23:52:14.962+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/from_csv_to_pgsql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/from_csv_to_pgsql.py", line 31, in <module>
+    files = os.listdir('files/')
+            ^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'files/'
+[2024-07-13T23:52:14.971+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T23:52:14.996+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/from_csv_to_pgsql.py took 0.257 seconds
+[2024-07-13T23:52:45.587+0000] {processor.py:161} INFO - Started process (PID=294) to work on /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T23:52:45.608+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/from_csv_to_pgsql.py for tasks to queue
+[2024-07-13T23:52:45.625+0000] {logging_mixin.py:188} INFO - [2024-07-13T23:52:45.623+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T23:52:45.979+0000] {logging_mixin.py:188} INFO - [2024-07-13T23:52:45.973+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/from_csv_to_pgsql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/from_csv_to_pgsql.py", line 31, in <module>
+    files = os.listdir('files/')
+            ^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'files/'
+[2024-07-13T23:52:45.982+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T23:52:46.026+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/from_csv_to_pgsql.py took 0.479 seconds
+[2024-07-13T23:53:17.526+0000] {processor.py:161} INFO - Started process (PID=305) to work on /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T23:53:17.529+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/from_csv_to_pgsql.py for tasks to queue
+[2024-07-13T23:53:17.536+0000] {logging_mixin.py:188} INFO - [2024-07-13T23:53:17.536+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T23:53:17.898+0000] {logging_mixin.py:188} INFO - [2024-07-13T23:53:17.888+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/from_csv_to_pgsql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/from_csv_to_pgsql.py", line 31, in <module>
+    files = os.listdir('files/')
+            ^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'files/'
+[2024-07-13T23:53:17.901+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T23:53:18.294+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/from_csv_to_pgsql.py took 0.829 seconds
+[2024-07-13T23:53:47.911+0000] {processor.py:161} INFO - Started process (PID=316) to work on /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T23:53:47.912+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/from_csv_to_pgsql.py for tasks to queue
+[2024-07-13T23:53:47.916+0000] {logging_mixin.py:188} INFO - [2024-07-13T23:53:47.915+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T23:53:48.214+0000] {logging_mixin.py:188} INFO - [2024-07-13T23:53:48.203+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/from_csv_to_pgsql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/from_csv_to_pgsql.py", line 31, in <module>
+    files = os.listdir('./files/')
+            ^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: './files/'
+[2024-07-13T23:53:48.216+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T23:53:48.250+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/from_csv_to_pgsql.py took 0.348 seconds
+[2024-07-13T23:54:18.618+0000] {processor.py:161} INFO - Started process (PID=327) to work on /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T23:54:18.630+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/from_csv_to_pgsql.py for tasks to queue
+[2024-07-13T23:54:18.642+0000] {logging_mixin.py:188} INFO - [2024-07-13T23:54:18.640+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T23:54:19.043+0000] {logging_mixin.py:188} INFO - [2024-07-13T23:54:19.035+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/from_csv_to_pgsql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/from_csv_to_pgsql.py", line 31, in <module>
+    files = os.listdir('./files/')
+            ^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: './files/'
+[2024-07-13T23:54:19.045+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T23:54:19.098+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/from_csv_to_pgsql.py took 0.529 seconds
+[2024-07-13T23:54:49.866+0000] {processor.py:161} INFO - Started process (PID=344) to work on /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T23:54:49.869+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/from_csv_to_pgsql.py for tasks to queue
+[2024-07-13T23:54:49.876+0000] {logging_mixin.py:188} INFO - [2024-07-13T23:54:49.875+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T23:54:50.227+0000] {logging_mixin.py:188} INFO - [2024-07-13T23:54:50.216+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/from_csv_to_pgsql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/from_csv_to_pgsql.py", line 31, in <module>
+    files = os.listdir('./files/')
+            ^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: './files/'
+[2024-07-13T23:54:50.232+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T23:54:50.261+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/from_csv_to_pgsql.py took 0.435 seconds
+[2024-07-13T23:55:21.009+0000] {processor.py:161} INFO - Started process (PID=355) to work on /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T23:55:21.026+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/from_csv_to_pgsql.py for tasks to queue
+[2024-07-13T23:55:21.051+0000] {logging_mixin.py:188} INFO - [2024-07-13T23:55:21.051+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T23:55:21.445+0000] {logging_mixin.py:188} INFO - [2024-07-13T23:55:21.437+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/from_csv_to_pgsql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/from_csv_to_pgsql.py", line 31, in <module>
+    files = os.listdir('./files/')
+            ^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: './files/'
+[2024-07-13T23:55:21.448+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T23:55:21.489+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/from_csv_to_pgsql.py took 0.548 seconds
+[2024-07-13T23:55:52.082+0000] {processor.py:161} INFO - Started process (PID=366) to work on /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T23:55:52.105+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/from_csv_to_pgsql.py for tasks to queue
+[2024-07-13T23:55:52.120+0000] {logging_mixin.py:188} INFO - [2024-07-13T23:55:52.117+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T23:55:52.371+0000] {logging_mixin.py:188} INFO - [2024-07-13T23:55:52.365+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/from_csv_to_pgsql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/from_csv_to_pgsql.py", line 31, in <module>
+    files = os.listdir('./files/')
+            ^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: './files/'
+[2024-07-13T23:55:52.374+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T23:55:52.396+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/from_csv_to_pgsql.py took 0.390 seconds
+[2024-07-13T23:56:23.066+0000] {processor.py:161} INFO - Started process (PID=378) to work on /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T23:56:23.067+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/from_csv_to_pgsql.py for tasks to queue
+[2024-07-13T23:56:23.071+0000] {logging_mixin.py:188} INFO - [2024-07-13T23:56:23.070+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T23:56:23.334+0000] {logging_mixin.py:188} INFO - [2024-07-13T23:56:23.316+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/from_csv_to_pgsql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/from_csv_to_pgsql.py", line 31, in <module>
+    files = os.listdir('./files/')
+            ^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: './files/'
+[2024-07-13T23:56:23.341+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T23:56:23.909+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/from_csv_to_pgsql.py took 0.852 seconds
+[2024-07-13T23:56:55.124+0000] {processor.py:161} INFO - Started process (PID=390) to work on /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T23:56:55.138+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/from_csv_to_pgsql.py for tasks to queue
+[2024-07-13T23:56:55.147+0000] {logging_mixin.py:188} INFO - [2024-07-13T23:56:55.144+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T23:56:55.306+0000] {logging_mixin.py:188} INFO - [2024-07-13T23:56:55.299+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/from_csv_to_pgsql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/from_csv_to_pgsql.py", line 31, in <module>
+    files = os.listdir('./files/')
+            ^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: './files/'
+[2024-07-13T23:56:55.307+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T23:56:55.372+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/from_csv_to_pgsql.py took 0.314 seconds
+[2024-07-13T23:57:01.924+0000] {processor.py:161} INFO - Started process (PID=395) to work on /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T23:57:01.936+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/from_csv_to_pgsql.py for tasks to queue
+[2024-07-13T23:57:01.957+0000] {logging_mixin.py:188} INFO - [2024-07-13T23:57:01.952+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T23:57:02.358+0000] {logging_mixin.py:188} INFO - [2024-07-13T23:57:02.355+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/from_csv_to_pgsql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/from_csv_to_pgsql.py", line 31, in <module>
+    files = os.listdir('/opt/airflow//files/')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/opt/airflow//files/'
+[2024-07-13T23:57:02.359+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T23:57:02.378+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/from_csv_to_pgsql.py took 0.502 seconds
+[2024-07-13T23:57:22.067+0000] {processor.py:161} INFO - Started process (PID=406) to work on /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T23:57:22.072+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/from_csv_to_pgsql.py for tasks to queue
+[2024-07-13T23:57:22.077+0000] {logging_mixin.py:188} INFO - [2024-07-13T23:57:22.076+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T23:57:22.732+0000] {logging_mixin.py:188} INFO - [2024-07-13T23:57:22.660+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/from_csv_to_pgsql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/from_csv_to_pgsql.py", line 31, in <module>
+    files = os.listdir('/opt/airflow/files/')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/opt/airflow/files/'
+[2024-07-13T23:57:22.751+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T23:57:23.245+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/from_csv_to_pgsql.py took 1.205 seconds
+[2024-07-13T23:57:54.049+0000] {processor.py:161} INFO - Started process (PID=417) to work on /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T23:57:54.060+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/from_csv_to_pgsql.py for tasks to queue
+[2024-07-13T23:57:54.088+0000] {logging_mixin.py:188} INFO - [2024-07-13T23:57:54.083+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T23:57:54.709+0000] {logging_mixin.py:188} INFO - [2024-07-13T23:57:54.694+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/from_csv_to_pgsql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/from_csv_to_pgsql.py", line 31, in <module>
+    files = os.listdir('/opt/airflow/files/')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/opt/airflow/files/'
+[2024-07-13T23:57:54.712+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T23:57:54.887+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/from_csv_to_pgsql.py took 1.114 seconds
+[2024-07-13T23:58:25.428+0000] {processor.py:161} INFO - Started process (PID=429) to work on /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T23:58:25.430+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/from_csv_to_pgsql.py for tasks to queue
+[2024-07-13T23:58:25.432+0000] {logging_mixin.py:188} INFO - [2024-07-13T23:58:25.432+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T23:58:25.525+0000] {logging_mixin.py:188} INFO - [2024-07-13T23:58:25.519+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/from_csv_to_pgsql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/from_csv_to_pgsql.py", line 31, in <module>
+    files = os.listdir('/opt/airflow/files/')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/opt/airflow/files/'
+[2024-07-13T23:58:25.528+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T23:58:25.550+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/from_csv_to_pgsql.py took 0.128 seconds
+[2024-07-13T23:58:56.422+0000] {processor.py:161} INFO - Started process (PID=440) to work on /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T23:58:56.423+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/from_csv_to_pgsql.py for tasks to queue
+[2024-07-13T23:58:56.425+0000] {logging_mixin.py:188} INFO - [2024-07-13T23:58:56.425+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T23:58:56.563+0000] {logging_mixin.py:188} INFO - [2024-07-13T23:58:56.555+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/from_csv_to_pgsql.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/from_csv_to_pgsql.py", line 31, in <module>
+    files = os.listdir('/opt/airflow/files/')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/opt/airflow/files/'
+[2024-07-13T23:58:56.567+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/from_csv_to_pgsql.py
+[2024-07-13T23:58:56.598+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/from_csv_to_pgsql.py took 0.183 seconds

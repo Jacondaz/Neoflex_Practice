@@ -1,0 +1,20 @@
+[2024-07-18T15:52:33.218+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-18T15:52:33.243+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: run_fill_procedure.start_process manual__2024-07-18T15:52:32.333326+00:00 [queued]>
+[2024-07-18T15:52:33.251+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: run_fill_procedure.start_process manual__2024-07-18T15:52:32.333326+00:00 [queued]>
+[2024-07-18T15:52:33.253+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-07-18T15:52:33.264+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): start_process> on 2024-07-18 15:52:32.333326+00:00
+[2024-07-18T15:52:33.270+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'run_fill_procedure', 'start_process', 'manual__2024-07-18T15:52:32.333326+00:00', '--job-id', '441', '--raw', '--subdir', 'DAGS_FOLDER/create_and_fill_proc.py', '--cfg-path', '/tmp/tmprwvey6kx']
+[2024-07-18T15:52:33.272+0000] {standard_task_runner.py:91} INFO - Job 441: Subtask start_process
+[2024-07-18T15:52:33.286+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=5857) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-07-18T15:52:33.287+0000] {standard_task_runner.py:63} INFO - Started process 5858 to run task
+[2024-07-18T15:52:33.312+0000] {task_command.py:426} INFO - Running <TaskInstance: run_fill_procedure.start_process manual__2024-07-18T15:52:32.333326+00:00 [running]> on host 7c7e02e57379
+[2024-07-18T15:52:33.377+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='run_fill_procedure' AIRFLOW_CTX_TASK_ID='start_process' AIRFLOW_CTX_EXECUTION_DATE='2024-07-18T15:52:32.333326+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-07-18T15:52:32.333326+00:00'
+[2024-07-18T15:52:33.378+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-18T15:52:33.395+0000] {base.py:84} INFO - Using connection ID 'postgres_default' for task execution.
+[2024-07-18T15:52:38.414+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-07-18T15:52:38.419+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-18T15:52:38.445+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=run_fill_procedure, task_id=start_process, run_id=manual__2024-07-18T15:52:32.333326+00:00, execution_date=20240718T155232, start_date=20240718T155233, end_date=20240718T155238
+[2024-07-18T15:52:38.474+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-07-18T15:52:38.485+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/models/baseoperator.py:1297 AirflowProviderDeprecationWarning: Call to deprecated class PostgresOperator. (Please use `***.providers.common.sql.operators.sql.SQLExecuteQueryOperator`.Also, you can provide `hook_params={'schema': <database>}`.)
+[2024-07-18T15:52:38.498+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-07-18T15:52:38.502+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,54 @@
+[2024-07-18T15:22:19.999+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-18T15:22:20.155+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: run_fill_procedure.fill_dm_account_turnover scheduled__2024-07-17T00:00:00+00:00 [queued]>
+[2024-07-18T15:22:20.169+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: run_fill_procedure.fill_dm_account_turnover scheduled__2024-07-17T00:00:00+00:00 [queued]>
+[2024-07-18T15:22:20.170+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-07-18T15:22:20.192+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): fill_dm_account_turnover> on 2024-07-17 00:00:00+00:00
+[2024-07-18T15:22:20.198+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'run_fill_procedure', 'fill_dm_account_turnover', 'scheduled__2024-07-17T00:00:00+00:00', '--job-id', '410', '--raw', '--subdir', 'DAGS_FOLDER/create_and_fill_proc.py', '--cfg-path', '/tmp/tmpuka_sn4v']
+[2024-07-18T15:22:20.201+0000] {standard_task_runner.py:91} INFO - Job 410: Subtask fill_dm_account_turnover
+[2024-07-18T15:22:20.202+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=1231) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-07-18T15:22:20.203+0000] {standard_task_runner.py:63} INFO - Started process 1232 to run task
+[2024-07-18T15:22:20.247+0000] {task_command.py:426} INFO - Running <TaskInstance: run_fill_procedure.fill_dm_account_turnover scheduled__2024-07-17T00:00:00+00:00 [running]> on host 7c7e02e57379
+[2024-07-18T15:22:20.331+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='run_fill_procedure' AIRFLOW_CTX_TASK_ID='fill_dm_account_turnover' AIRFLOW_CTX_EXECUTION_DATE='2024-07-17T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-17T00:00:00+00:00'
+[2024-07-18T15:22:20.333+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-18T15:22:20.354+0000] {base.py:84} INFO - Using connection ID 'postgres_default' for task execution.
+[2024-07-18T15:22:20.392+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-18T15:22:20.393+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/create_and_fill_proc.py", line 144, in fill_dm_account_turnover
+    cursor.execute(sql)
+psycopg2.errors.UndefinedColumn: column "Start_fill_turnover" does not exist
+LINE 2:             values (start_time, "Start_fill_turnover")
+                                        ^
+QUERY:  insert into logs.logs(start_time, status)
+            values (start_time, "Start_fill_turnover")
+            returning log_id
+CONTEXT:  PL/pgSQL function inline_code_block line 7 at SQL statement
+
+[2024-07-18T15:22:20.413+0000] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=run_fill_procedure, task_id=fill_dm_account_turnover, run_id=scheduled__2024-07-17T00:00:00+00:00, execution_date=20240717T000000, start_date=20240718T152220, end_date=20240718T152220
+[2024-07-18T15:22:20.425+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 410 for task fill_dm_account_turnover (column "Start_fill_turnover" does not exist
+LINE 2:             values (start_time, "Start_fill_turnover")
+                                        ^
+QUERY:  insert into logs.logs(start_time, status)
+            values (start_time, "Start_fill_turnover")
+            returning log_id
+CONTEXT:  PL/pgSQL function inline_code_block line 7 at SQL statement
+; 1232)
+[2024-07-18T15:22:20.463+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2024-07-18T15:22:20.472+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/models/baseoperator.py:1297 AirflowProviderDeprecationWarning: Call to deprecated class PostgresOperator. (Please use `***.providers.common.sql.operators.sql.SQLExecuteQueryOperator`.Also, you can provide `hook_params={'schema': <database>}`.)
+[2024-07-18T15:22:20.485+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-18T15:22:20.488+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

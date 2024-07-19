@@ -1,0 +1,17 @@
+[2024-07-14T13:54:59.532+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-14T13:54:59.597+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: from_csv_to_pgsql.save_file_md_account_d.csv manual__2024-07-14T13:47:31.857179+00:00 [queued]>
+[2024-07-14T13:54:59.615+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: from_csv_to_pgsql.save_file_md_account_d.csv manual__2024-07-14T13:47:31.857179+00:00 [queued]>
+[2024-07-14T13:54:59.616+0000] {taskinstance.py:2306} INFO - Starting attempt 2 of 2
+[2024-07-14T13:54:59.676+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): save_file_md_account_d.csv> on 2024-07-14 13:47:31.857179+00:00
+[2024-07-14T13:54:59.694+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'from_csv_to_pgsql', 'save_file_md_account_d.csv', 'manual__2024-07-14T13:47:31.857179+00:00', '--job-id', '223', '--raw', '--subdir', 'DAGS_FOLDER/from_csv_to_pgsql.py', '--cfg-path', '/tmp/tmpj6o2s8x5']
+[2024-07-14T13:54:59.701+0000] {standard_task_runner.py:91} INFO - Job 223: Subtask save_file_md_account_d.csv
+[2024-07-14T13:54:59.706+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=171) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-07-14T13:54:59.711+0000] {standard_task_runner.py:63} INFO - Started process 184 to run task
+[2024-07-14T13:54:59.866+0000] {task_command.py:426} INFO - Running <TaskInstance: from_csv_to_pgsql.save_file_md_account_d.csv manual__2024-07-14T13:47:31.857179+00:00 [running]> on host 9f7c9228fff1
+[2024-07-14T13:55:00.088+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='from_csv_to_pgsql' AIRFLOW_CTX_TASK_ID='save_file_md_account_d.csv' AIRFLOW_CTX_EXECUTION_DATE='2024-07-14T13:47:31.857179+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-07-14T13:47:31.857179+00:00'
+[2024-07-14T13:55:00.092+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-14T13:55:40.557+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-07-14T13:55:40.628+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-14T13:55:40.907+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=from_csv_to_pgsql, task_id=save_file_md_account_d.csv, run_id=manual__2024-07-14T13:47:31.857179+00:00, execution_date=20240714T134731, start_date=20240714T135459, end_date=20240714T135540
+[2024-07-14T13:55:41.176+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-07-14T13:55:42.086+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

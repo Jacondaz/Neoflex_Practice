@@ -1,0 +1,20 @@
+[2024-07-19T20:54:33.707+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-19T20:54:33.738+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: load.save_to_pg manual__2024-07-19T20:49:24.158667+00:00 [queued]>
+[2024-07-19T20:54:33.747+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: load.save_to_pg manual__2024-07-19T20:49:24.158667+00:00 [queued]>
+[2024-07-19T20:54:33.748+0000] {taskinstance.py:2306} INFO - Starting attempt 2 of 2
+[2024-07-19T20:54:33.762+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): save_to_pg> on 2024-07-19 20:49:24.158667+00:00
+[2024-07-19T20:54:33.770+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'load', 'save_to_pg', 'manual__2024-07-19T20:49:24.158667+00:00', '--job-id', '689', '--raw', '--subdir', 'DAGS_FOLDER/load.py', '--cfg-path', '/tmp/tmpynsda11k']
+[2024-07-19T20:54:33.772+0000] {standard_task_runner.py:91} INFO - Job 689: Subtask save_to_pg
+[2024-07-19T20:54:33.773+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=5944) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-07-19T20:54:33.774+0000] {standard_task_runner.py:63} INFO - Started process 5948 to run task
+[2024-07-19T20:54:33.823+0000] {task_command.py:426} INFO - Running <TaskInstance: load.save_to_pg manual__2024-07-19T20:49:24.158667+00:00 [running]> on host 7c7e02e57379
+[2024-07-19T20:54:33.905+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='load' AIRFLOW_CTX_TASK_ID='save_to_pg' AIRFLOW_CTX_EXECUTION_DATE='2024-07-19T20:49:24.158667+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-07-19T20:49:24.158667+00:00'
+[2024-07-19T20:54:33.906+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-19T20:54:33.940+0000] {base.py:84} INFO - Using connection ID 'postgres_default' for task execution.
+[2024-07-19T20:54:40.640+0000] {base.py:84} INFO - Using connection ID 'postgres_default' for task execution.
+[2024-07-19T20:54:40.650+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-07-19T20:54:40.651+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-19T20:54:40.659+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=load, task_id=save_to_pg, run_id=manual__2024-07-19T20:49:24.158667+00:00, execution_date=20240719T204924, start_date=20240719T205433, end_date=20240719T205440
+[2024-07-19T20:54:40.713+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-07-19T20:54:40.733+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-19T20:54:40.736+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,21 @@
+[2024-07-19T19:19:56.459+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-19T19:19:56.499+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: run_fill_f_101_round_f.fill_dm_account_balance_f manual__2024-07-19T19:19:28.085429+00:00 [queued]>
+[2024-07-19T19:19:56.512+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: run_fill_f_101_round_f.fill_dm_account_balance_f manual__2024-07-19T19:19:28.085429+00:00 [queued]>
+[2024-07-19T19:19:56.514+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-07-19T19:19:56.532+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): fill_dm_account_balance_f> on 2024-07-19 19:19:28.085429+00:00
+[2024-07-19T19:19:56.541+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'run_fill_f_101_round_f', 'fill_dm_account_balance_f', 'manual__2024-07-19T19:19:28.085429+00:00', '--job-id', '611', '--raw', '--subdir', 'DAGS_FOLDER/сreate_and_fill_f101_round_f.py', '--cfg-path', '/tmp/tmpt1zrszcy']
+[2024-07-19T19:19:56.544+0000] {standard_task_runner.py:91} INFO - Job 611: Subtask fill_dm_account_balance_f
+[2024-07-19T19:19:56.554+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=16280) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-07-19T19:19:56.555+0000] {standard_task_runner.py:63} INFO - Started process 16281 to run task
+[2024-07-19T19:19:56.594+0000] {task_command.py:426} INFO - Running <TaskInstance: run_fill_f_101_round_f.fill_dm_account_balance_f manual__2024-07-19T19:19:28.085429+00:00 [running]> on host 7c7e02e57379
+[2024-07-19T19:19:56.680+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='run_fill_f_101_round_f' AIRFLOW_CTX_TASK_ID='fill_dm_account_balance_f' AIRFLOW_CTX_EXECUTION_DATE='2024-07-19T19:19:28.085429+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-07-19T19:19:28.085429+00:00'
+[2024-07-19T19:19:56.682+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-19T19:19:56.701+0000] {base.py:84} INFO - Using connection ID 'postgres_default' for task execution.
+[2024-07-19T19:19:56.712+0000] {base.py:84} INFO - Using connection ID 'postgres_default' for task execution.
+[2024-07-19T19:19:56.727+0000] {base.py:84} INFO - Using connection ID 'postgres_default' for task execution.
+[2024-07-19T19:19:56.770+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-07-19T19:19:56.771+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-19T19:19:56.779+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=run_fill_f_101_round_f, task_id=fill_dm_account_balance_f, run_id=manual__2024-07-19T19:19:28.085429+00:00, execution_date=20240719T191928, start_date=20240719T191956, end_date=20240719T191956
+[2024-07-19T19:19:56.811+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-07-19T19:19:56.841+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-07-19T19:19:56.844+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
